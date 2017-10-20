@@ -1,6 +1,8 @@
 package com.example.alexiuce.webapplication;
 
 import android.graphics.Bitmap;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.view.KeyEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
     private WebView webView;
 
+    private Handler mHandle = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    url = new URL("https://m.baidu.com/?from=844b&vit=fps");
+                    URL url = new URL("https://m.baidu.com/?from=844b&vit=fps");
+
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setConnectTimeout(5000);   // 请求超时
                     System.out.println("res::" + conn.getResponseCode());
@@ -91,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }.start();
-        ;
 
 
     }

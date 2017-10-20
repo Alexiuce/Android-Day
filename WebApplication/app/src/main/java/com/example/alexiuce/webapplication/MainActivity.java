@@ -7,8 +7,18 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebResourceRequest;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.alexiuce.webapplication.StringTools.StringUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         webView = (WebView) findViewById(R.id.wv_homeWebView);
+        webView.getSettings().setJavaScriptEnabled(true);   // 开启js功能
         // 防止使用系统浏览器打开url
-        webView.setWebViewClient(new WebViewClient(){
+        webView.setWebViewClient(new WebViewClient() {
 //            @Override
 //            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
 //                return super.shouldOverrideUrlLoading(view, request);
@@ -32,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(url);
                 view.loadUrl(url);
                 return true;
-//                return super.shouldOverrideUrlLoading(view, url);
+//                returna super.shouldOverrideUrlLoading(view, url);
             }
 
             // 页面开始加载
@@ -52,6 +63,36 @@ public class MainActivity extends AppCompatActivity {
         // 加载url
         webView.loadUrl("http://www.baidu.com");
 
+        loadNetData();
+
+
+    }
+
+    //    加载网络数据
+    private void loadNetData() {
+// 开启子线程
+        new Thread() {
+            @Override
+            public void run() {
+                try {
+                    url = new URL("https://m.baidu.com/?from=844b&vit=fps");
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setConnectTimeout(5000);   // 请求超时
+                    System.out.println("res::" + conn.getResponseCode());
+
+                    if (conn.getResponseCode() == 200) {
+                        InputStream inputStream = conn.getInputStream();
+
+                        String result = StringUtils.streamToString(inputStream);
+                        System.out.println(result);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
+        ;
+
 
     }
 
@@ -59,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
     // 回退键事件处理
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (webView.canGoBack()){
+        if (webView.canGoBack()) {
             webView.goBack();
             return true;
         }

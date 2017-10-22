@@ -41,18 +41,19 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);   // 开启js功能
         // 防止使用系统浏览器打开url
         webView.setWebViewClient(new WebViewClient() {
-//            @Override
-//            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-//                return super.shouldOverrideUrlLoading(view, request);
-//            }
-
             @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                System.out.println(url);
-                view.loadUrl(url);
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                view.loadUrl(request.getUrl().toString());
                 return true;
-//                returna super.shouldOverrideUrlLoading(view, url);
             }
+
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                System.out.println(url);
+//                view.loadUrl(url);
+//                return true;
+////                returna super.shouldOverrideUrlLoading(view, url);
+//            }
 
             // 页面开始加载
             @Override

@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.example.alexcai.myapplication.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:layout_gravity="center"
       />
 
     <Button
@@ -27,5 +27,11 @@
         android:text="sp 读取"
         android:textAllCaps="false"
         android:onClick="clickForReadsp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alert dialog"
+        android:textAllCaps="false"
+        android:onClick="clickForAlert"/>
 
 </LinearLayout>

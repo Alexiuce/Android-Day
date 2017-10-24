@@ -1,6 +1,8 @@
 package com.example.alexcai.myapplication;
 
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -53,6 +55,32 @@ public class MainActivity extends AppCompatActivity {
 //        toast1.show();
 
         /* */
+
+    }
+
+    public void clickForAlert(View v){
+       /* 1. 创建alert builder*/
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        /*1.1 设置builder的内容样式*/
+        builder.setMessage("这是内容部分");
+        builder.setTitle("这是标题");
+        
+        builder.setNegativeButton("cancle", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(),"点击了 cancle btn",Toast.LENGTH_SHORT).show();
+            }
+        });
+        builder.setNeutralButton("sure", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(),"clikc sure btn",Toast.LENGTH_SHORT).show();
+            }
+        });
+        /*2. 通过builer 创建 dialog*/
+        AlertDialog alertDialog = builder.create();
+        /*3. 显示 dialog*/
+        alertDialog.show();
 
     }
 

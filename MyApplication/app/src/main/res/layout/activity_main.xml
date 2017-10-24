@@ -34,4 +34,13 @@
         android:textAllCaps="false"
         android:onClick="clickForAlert"/>
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_button"
+        android:text="选中效果"
+
+        />
+
 </LinearLayout>

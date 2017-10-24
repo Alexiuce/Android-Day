@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         String username = userInfo.getString("username","empty");
 
         /*方式1 ： 默认样式*/
-        Toast.makeText(this,"获取的sp值"+ username,Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,"获取的sp值"+ username,Toast.LENGTH_SHORT).show();
 
         /* 方式2: 自定义位置 */
-//        Toast toast = Toast.makeText(this, "sp值:" + username, Toast.LENGTH_SHORT);
-//        toast.setGravity(Gravity.CENTER,0,0);
-//        toast.show();
+        Toast toast = Toast.makeText(this, "sp值:" + username, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER,0,0);
+        toast.show();
         
         /*带图片的toast*/
 
@@ -62,9 +62,18 @@ public class MainActivity extends AppCompatActivity {
        /* 1. 创建alert builder*/
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         /*1.1 设置builder的内容样式*/
-        builder.setMessage("这是内容部分");
+//        builder.setMessage("这是内容部分");
         builder.setTitle("这是标题");
-        
+
+
+        final String[] items = {"one item","two item","three item"};
+        builder.setItems(items, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(),items[which],Toast.LENGTH_SHORT).show();
+            }
+        });
+
         builder.setNegativeButton("cancle", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -77,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"clikc sure btn",Toast.LENGTH_SHORT).show();
             }
         });
+        builder.setCancelable(false);
         /*2. 通过builer 创建 dialog*/
         AlertDialog alertDialog = builder.create();
         /*3. 显示 dialog*/

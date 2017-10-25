@@ -9,6 +9,7 @@
 
     tools:context="com.example.alexcai.myapplication.MainActivity">
     <TextView
+        android:id="@+id/tv_homeTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bing Phone"

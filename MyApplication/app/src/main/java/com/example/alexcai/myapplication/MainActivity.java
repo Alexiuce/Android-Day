@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(this,"获取的sp值"+ username,Toast.LENGTH_SHORT).show();
 
         /* 方式2: 自定义位置 */
-        Toast toast = Toast.makeText(this, "sp值:" + username, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "sp值:" + username + ConstantStringValue.title, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER,0,0);
         toast.show();
         

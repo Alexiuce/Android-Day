@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 联系人 列表-->
+        <activity android:name=".ContactActivity"></activity>
     </application>
 
 </manifest>

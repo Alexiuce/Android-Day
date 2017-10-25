@@ -1,22 +1,27 @@
 package com.example.alexcai.myapplication;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       Button contactBtn = (Button)findViewById(R.id.btn_contact);
+        contactBtn.setOnClickListener(this);
     }
     public void clickForSP(View v){
         System.out.println("click for sp demo");
@@ -38,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(this,"获取的sp值"+ username,Toast.LENGTH_SHORT).show();
 
         /* 方式2: 自定义位置 */
-        Toast toast = Toast.makeText(this, "sp值:" + username + ConstantStringValue.title, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "sp值:" + username +" : "+ getString(R.string.home_title), Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER,0,0);
         toast.show();
         
@@ -96,5 +101,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getApplicationContext(), ContactActivity.class);
+        startActivityForResult(intent,0);
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+    }
 }

@@ -12,7 +12,7 @@
         android:id="@+id/tv_homeTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bing Phone"
+        android:text="@string/home_title"
         android:gravity="center"
         android:padding="10dp"
         android:background="@color/titleGreen"
@@ -48,7 +48,12 @@
     <Button
        style="@style/selected_style_button"
         android:text="选中效果"
-
+        />
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通讯录联系人"
 
         />
 

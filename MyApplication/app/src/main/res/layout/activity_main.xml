@@ -11,8 +11,10 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_height="40dp"
+        android:text="icon+ text"
+        android:drawableLeft="@drawable/icon"
+        android:gravity="center"
       />
 
     <Button
@@ -37,7 +39,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="@drawable/selector_button"
         android:text="选中效果"
 

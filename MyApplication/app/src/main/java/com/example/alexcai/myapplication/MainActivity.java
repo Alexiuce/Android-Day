@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(getApplicationContext(),"点击了 cancle btn",Toast.LENGTH_SHORT).show();
+
             }
         });
         builder.setNeutralButton("sure", new DialogInterface.OnClickListener() {

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+
     tools:context="com.example.alexcai.myapplication.MainActivity">
 
     <TextView
@@ -38,10 +39,9 @@
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:background="@drawable/selector_button"
+       style="@style/selected_style_button"
         android:text="选中效果"
+
 
         />
 

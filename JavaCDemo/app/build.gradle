@@ -9,6 +9,17 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            moduleName "JniDemo"
+
+            stl "stlport_static"
+            ldLibs "log"
+        }
+        sourceSets {
+            main {
+                jni.srcDirs = []
+            }
+        }
     }
     buildTypes {
         release {

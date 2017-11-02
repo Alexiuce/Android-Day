@@ -1,5 +1,6 @@
  package com.example.caijinzhu.listviewdemo;
 
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.TextView;
  public class MainActivity extends AppCompatActivity  {
 
      private ListView lv;   // listView;
+     private View inflate;
+
 
      @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,8 @@ import android.widget.TextView;
         setContentView(R.layout.activity_main);
          lv = (ListView)findViewById(R.id.lv_listView);
          lv.setAdapter(new DataSource());
-    }
+
+     }
 
     private class DataSource extends BaseAdapter{
         @Override      // 返回条目数量
@@ -40,14 +44,15 @@ import android.widget.TextView;
         @Override     // 相当于iOS中的cellForRow ,返回每行的视图
         public View getView(int position, View convertView, ViewGroup parent) {
 
-            TextView tv ;
             if (convertView != null){
-                tv = (TextView) convertView;
+                inflate =  convertView;
             }else {
-                tv = new TextView(MainActivity.this);
+                inflate = View.inflate(getApplicationContext(), R.layout.main_cell_item, null);
             }
-            tv.setText("adfsadf" + position);
-            return tv;
+            TextView titleView = (TextView) inflate.findViewById(R.id.tv_titleView);
+            titleView.setText("from xml view" + position);
+
+            return inflate;
         }
     }
  }

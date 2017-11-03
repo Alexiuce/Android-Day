@@ -1,6 +1,9 @@
 package com.example.caijinzhu.listviewdemo;
 
+import android.app.Activity;
+import android.app.Application;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -35,6 +38,7 @@ public class DataSource extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View cellView;
+        Activity act = (Activity) parent.getContext();
         if (convertView != null){
             cellView =  convertView;
         }else {
@@ -45,7 +49,12 @@ public class DataSource extends BaseAdapter{
 
         ImageView icon = (ImageView) cellView.findViewById(R.id.iv_iconView);
 
-        icon.setImageResource(R.drawable.icon1);
+        int index = position % 10 + 1;
+        String picName = "icon" + index ;
+
+        Application app = act.getApplication();
+        int id = act.getResources().getIdentifier(picName,"drawable",app.getPackageName());
+        icon.setImageResource(id);
         return cellView;
     }
 }

@@ -14,8 +14,6 @@ import android.widget.TextView;
 
      private ListView lv;   // listView;
 
-
-
      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -7,6 +7,7 @@
     tools:context="com.example.alexcai.fragmentdemo.MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -17,8 +18,21 @@
     <fragment
         android:id="@+id/fragment_top"
         android:name="com.example.alexcai.fragmentdemo.TopFragment"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        app:layout_constraintTop_toBottomOf="@id/fragment_top"
+        android:layout_marginTop="50dp"
+        >
+
+    </FrameLayout>
+
+
 
 
 </android.support.constraint.ConstraintLayout>

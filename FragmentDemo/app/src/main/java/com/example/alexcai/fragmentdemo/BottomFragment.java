@@ -65,7 +65,17 @@ public class BottomFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bottom, container, false);
+
+        View contentView = inflater.inflate(R.layout.fragment_bottom, container, false);
+
+        contentView.findViewById(R.id.btn_click).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("adfasfsd");
+            }
+        });
+
+        return contentView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

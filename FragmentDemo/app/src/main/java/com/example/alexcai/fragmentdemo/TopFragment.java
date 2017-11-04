@@ -1,12 +1,17 @@
 package com.example.alexcai.fragmentdemo;
 
+import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 
 /**
@@ -28,6 +33,7 @@ public class TopFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    private TextView titleView;
 
     public TopFragment() {
         // Required empty public constructor
@@ -67,9 +73,13 @@ public class TopFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_top,container,false);
 
+        titleView = (TextView) v.findViewById(R.id.tv_titleView);
+
+
         v.findViewById(R.id.button_top).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Uri uri = Uri.parse("hello fragment");
                 onButtonPressed(uri);
             }
@@ -80,18 +90,21 @@ public class TopFragment extends Fragment {
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
+        System.out.println(mListener);
         if (mListener != null) {
+            System.out.println("sdfasdf");
             mListener.onFragmentInteraction(uri);
         }
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        System.out.println("iouoiu");
+        if (activity instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) activity;
         } else {
-            throw new RuntimeException(context.toString()
+            throw new RuntimeException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
         }
     }
@@ -102,6 +115,11 @@ public class TopFragment extends Fragment {
         mListener = null;
     }
 
+
+    public void updateText(String text){
+
+        titleView.setText(text);
+    }
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated

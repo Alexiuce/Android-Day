@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewOutlineProvider;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements TopFragment.OnFragmentInteractionListener {
@@ -14,8 +15,6 @@ public class MainActivity extends AppCompatActivity implements TopFragment.OnFra
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        View bottomLayout = findViewById(R.id.fl_bottomLayout);
-
 
         FragmentManager fragmentManager = getFragmentManager();
 
@@ -31,6 +30,12 @@ public class MainActivity extends AppCompatActivity implements TopFragment.OnFra
     public void onFragmentInteraction(Uri uri) {
 
         Toast.makeText(this, uri.toString(),Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void updateTopFragment(String text){
+        TopFragment top = (TopFragment) getFragmentManager().findFragmentById(R.id.fragment_top);
+        top.updateText(text);
 
     }
 }

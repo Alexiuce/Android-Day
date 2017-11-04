@@ -71,7 +71,8 @@ public class BottomFragment extends Fragment {
         contentView.findViewById(R.id.btn_click).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("adfasfsd");
+                MainActivity ma = (MainActivity) getActivity();
+                ma.updateTopFragment("update by botoom button");
             }
         });
 

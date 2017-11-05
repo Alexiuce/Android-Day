@@ -17,10 +17,20 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
 
+    private Handler mHandler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            String in = (String) msg.obj;
+            updateText(in);
+
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         textView = findViewById(R.id.tv_textView);
 
@@ -34,13 +44,20 @@ public class MainActivity extends AppCompatActivity {
                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                InputStream inputStream = urlConnection.getInputStream();
 
-               final String result = StringUtil.stringFromInputStream(inputStream);
-               runOnUiThread(new Runnable() {
-                   @Override
-                   public void run() {
-                       updateText(result);
-                   }
-               });
+
+               // 方式1
+//               final String result = StringUtil.stringFromInputStream(inputStream);
+//               runOnUiThread(new Runnable() {
+//                   @Override
+//                   public void run() {
+//                       updateText(result);
+//                   }
+//               });
+                   // 方式2
+                   String result = StringUtil.stringFromInputStream(inputStream);
+                   Message msg = new Message();
+                   msg.obj = result;
+                   mHandler.sendMessage(msg);
 
                }catch (Exception e){
 

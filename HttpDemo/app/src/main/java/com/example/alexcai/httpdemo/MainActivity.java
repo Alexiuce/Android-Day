@@ -1,5 +1,7 @@
 package com.example.alexcai.httpdemo;
 
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,23 +14,33 @@ import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textView = findViewById(R.id.tv_textView);
+        textView = findViewById(R.id.tv_textView);
 
 
+        /*开启子线程 发送网络请求*/
         new Thread  (new Runnable() {
            @Override
            public void run() {
                try {
-
                URL url = new URL("http://httpbin.org/get");
                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                InputStream inputStream = urlConnection.getInputStream();
-               System.out.println(StringUtil.stringFromInputStream(inputStream));
+
+               final String result = StringUtil.stringFromInputStream(inputStream);
+               runOnUiThread(new Runnable() {
+                   @Override
+                   public void run() {
+                       updateText(result);
+                   }
+               });
 
                }catch (Exception e){
 
@@ -38,5 +50,11 @@ public class MainActivity extends AppCompatActivity {
            }
        }).start();
 
+    }
+
+
+    private void updateText(String text){
+        System.out.println(text + "====");
+        textView.setText(text);
     }
 }

@@ -2,4 +2,5 @@
     <string name="app_name">ActivityDemo</string>
     <string name="splash_title">Hello Splash</string>
     <string name="main_TopButton">new Activity</string>
+    <string name="splash_button_back">go back</string>
 </resources>

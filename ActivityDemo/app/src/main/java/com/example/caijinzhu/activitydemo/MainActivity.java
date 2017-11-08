@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     // MARK: - 按钮点击事件处理
     public void openNewActivity(View v){
         Intent it = new Intent(this,SplashActivity.class);
-        
+
         startActivity(it);
     }
 }

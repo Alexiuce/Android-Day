@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityDemo</string>
+    <string name="splash_title">Hello Splash</string>
+    <string name="main_TopButton">new Activity</string>
+</resources>

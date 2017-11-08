@@ -1,6 +1,7 @@
 package com.example.caijinzhu.activitydemo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,24 @@ public class MainActivity extends AppCompatActivity {
     public void openNewActivity(View v){
         Intent it = new Intent(this,SplashActivity.class);
 
-        startActivity(it);
+
+        // 传递数据到下个页面
+//        Uri hello = Uri.parse("hello://world");
+//        it.setData(hello);
+//        startActivity(it);
+
+        it.putExtra("name","alexiuce");
+        startActivityForResult(it,100);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        System.out.println(data);
+    }
+}
+
+
+class Person {
+    public String name = "aaa";
 }

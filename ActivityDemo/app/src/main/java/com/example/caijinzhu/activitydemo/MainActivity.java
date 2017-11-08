@@ -32,11 +32,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        System.out.println(data);
+        if (resultCode == RESULT_OK){
+
+            System.out.println(data.getStringExtra("back"));
+        }
     }
-}
-
-
-class Person {
-    public String name = "aaa";
 }

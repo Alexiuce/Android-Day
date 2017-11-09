@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -15,8 +16,9 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // 获取上个页码传过来的数据
-        String name = getIntent().getStringExtra("name");
-        System.out.println(name);
+        String sms = getIntent().getStringExtra("sms");
+        TextView t = (TextView) findViewById(R.id.tv_title);
+        t.setText(sms);
     }
 
 

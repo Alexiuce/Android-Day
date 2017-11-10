@@ -40,18 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         textView = findViewById(R.id.tv_textView);
-
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//               getHttp();
-//
-//            }
-//        });
+//        getHttp();
 
 
-
-        getHttp();
+        postHttp();
 
 
         // 发送网络请求
@@ -59,7 +51,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // post request
+    private  void postHttp(){
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://httpbin.org/").build();
+        XCHttpClient httpClient = retrofit.create(XCHttpClient.class);
+        Call<ResponseBody> request = httpClient.requestForPost();
+        request.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    String result =  response.body().string();
+                    System.out.println(result);
+                    textView.setText(result);
+                }catch (Exception e){
 
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+
+    // Get request
     private void getHttp(){
         final Retrofit refit = new Retrofit.Builder().baseUrl("http://httpbin.org/").build();
         XCHttpClient httpClient = refit.create(XCHttpClient.class);

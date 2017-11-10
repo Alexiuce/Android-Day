@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.json.JSONObject;
+
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.HashMap;
 
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -55,7 +60,20 @@ public class MainActivity extends AppCompatActivity {
     private  void postHttp(){
         Retrofit retrofit = new Retrofit.Builder().baseUrl("http://httpbin.org/").build();
         XCHttpClient httpClient = retrofit.create(XCHttpClient.class);
-        Call<ResponseBody> request = httpClient.requestForPost();
+
+        HashMap<String,Object> params = new HashMap<>();
+        params.put("name","alex");
+
+
+//        Call<ResponseBody> request = httpClient.requestForPost(params);
+//        Call<ResponseBody> request = httpClient.requestForPostQuery("alexiuce","hz");
+
+
+        RequestBody body = RequestBody.create(MediaType.parse("application/json"),"{\"name\":\"alexiuce\",\"job\":\"dev\"}");
+
+        JSONObject
+
+        Call<ResponseBody> request = httpClient.requestForPostBody(body);
         request.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

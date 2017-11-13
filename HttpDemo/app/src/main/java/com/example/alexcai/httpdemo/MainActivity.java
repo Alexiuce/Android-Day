@@ -91,12 +91,15 @@ public class MainActivity extends AppCompatActivity {
 
                     textView.setText(result);
 
-                    Type mType = new TypeToken<HashMap<String,Object>>(){}.getType();
-                    HashMap<String,String> map = g.fromJson(result, mType);
-                    String data = (String) map.get("data");
+//                    Type mType = new TypeToken<HashMap<String,Object>>(){}.getType();
+//                    HashMap<String,String> map = g.fromJson(result, mType);
+//                    String data = (String) map.get("data");
 
-                    System.out.println("data==" + data);
-                    System.out.println(map);
+                    MyJson responsJson = g.fromJson(result,MyJson.class);
+
+
+                    System.out.println(responsJson);
+
 
                 }catch (Exception e){
                     System.out.println("错误:");

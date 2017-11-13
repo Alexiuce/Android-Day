@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             String in = (String) msg.obj;
+
             updateText(in);
 
         }

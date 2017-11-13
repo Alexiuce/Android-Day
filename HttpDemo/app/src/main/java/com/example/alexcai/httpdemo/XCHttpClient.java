@@ -17,8 +17,8 @@ import retrofit2.http.QueryMap;
  */
 
 public interface XCHttpClient {
-    @GET("get")
-    Call<ResponseBody> responForGet();
+    @GET("get")     // 设置请求方法和url路径
+    Call<ResponseBody> responForGet();   // 返回一个请求Call对象,类似于iOS的 Http request
 
 
     @POST("post")

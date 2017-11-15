@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
 
+
 //    private Handler mHandler = new Handler(){
 //        @Override
 //        public void handleMessage(Message msg) {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //        }
 //    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

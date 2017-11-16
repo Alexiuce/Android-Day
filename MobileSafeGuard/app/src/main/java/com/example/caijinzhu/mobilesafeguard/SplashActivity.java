@@ -66,9 +66,11 @@ public class SplashActivity extends AppCompatActivity {
 
                 } catch (MalformedURLException e) {
                     Log.i("Splash","url error");
+                    ToastHelper.showMessage(getApplicationContext(),"url error");
                     e.printStackTrace();
                 }catch (IOException e){
                     Log.i("Splash","input stream error");
+                    ToastHelper.showMessage(getApplicationContext(),"url error");
                     e.printStackTrace();
                 }
             }

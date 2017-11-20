@@ -115,6 +115,11 @@ public class SplashActivity extends AppCompatActivity {
                 e.printStackTrace();
 
                 System.out.println("network error ");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
                 // 网络请求失败,进入home页面
                 runOnUiThread(new Runnable() {
                     @Override

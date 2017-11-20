@@ -1,11 +1,16 @@
 package com.example.caijinzhu.mobilesafeguard;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.style.BulletSpan;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewOutlineProvider;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
@@ -110,25 +115,76 @@ public class SplashActivity extends AppCompatActivity {
                 e.printStackTrace();
 
                 System.out.println("network error ");
+                // 网络请求失败,进入home页面
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        enterHome();
+                    }
+                });
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-//                System.out.println("okhttp response "  + response.body().string());
                 Gson gson = new Gson();
                 Type mTpye = new TypeToken<Map<String,Object>>(){}.getType();
                 Map responseMap = gson.fromJson(response.body().string(),mTpye);
                 System.out.println(responseMap);
-               Double versionCode =  (Double) responseMap.get("versionCode");
+                Double versionCode =  (Double) responseMap.get("versionCode");
+                final String updateMsg = (String) responseMap.get("title");
+                if (versionCode.intValue() > mPackageInfo.versionCode) {  // 有新版本 ,提示更新
+                    System.out.println("need update version");
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                           showUpdateDialog(updateMsg);
+                        }
+                    });
+                }else { // 进行home 页面
+                    System.out.println("enter home activity");
+                }
+            }
+        });
+    }
 
-                System.out.println("code :::" + versionCode.intValue());
+    /*显示更新提示对话框*/
+    private void  showUpdateDialog(String msg){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // 设置左上角图标
+        builder.setIcon(R.mipmap.ic_launcher);
+        // 设置标题
+        builder.setTitle("update message");
+        // 设置更新提示
+        builder.setMessage(msg);
+        // 设置确定按钮
+        builder.setPositiveButton("update", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // 下载新版本,更新
 
-
+            }
+        });
+        // 设置取消按钮
+        builder.setNegativeButton("later", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // 取消更新,关闭提示对话框,进入home页面
+                enterHome();
             }
         });
 
 
+        builder.show();
     }
+
+
+    private void enterHome(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+
 
     public PackageInfo getPackageInfo() {
         if (mPackageInfo == null){

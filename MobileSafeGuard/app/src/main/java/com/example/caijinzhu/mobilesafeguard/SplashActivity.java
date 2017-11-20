@@ -21,6 +21,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 public class SplashActivity extends AppCompatActivity {
 
     private TextView mVersionTextView;
@@ -31,7 +37,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         setupUI();        // 设置UI
-        checkVersion();   // 检测新版本
+//        checkVersion();   // 检测新版本 HttpURLConnect 请求网络
+        checkNewVersion();  // 检测新版本 OKHttp 请求网络
     }
     // 设置UI
     private  void  setupUI(){
@@ -91,6 +98,37 @@ public class SplashActivity extends AppCompatActivity {
         }.start();
     }
 
+//    检测新版本: 使用OKHttp发送网络请求
+    private  void checkNewVersion(){
+        String url = "http://192.168.0.117:8999/";
+        OkHttpClient okHttpClient = new OkHttpClient();
+        Request request = new Request.Builder().url(url).build();
+        Call call = okHttpClient.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+
+                System.out.println("network error ");
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+//                System.out.println("okhttp response "  + response.body().string());
+                Gson gson = new Gson();
+                Type mTpye = new TypeToken<Map<String,Object>>(){}.getType();
+                Map responseMap = gson.fromJson(response.body().string(),mTpye);
+                System.out.println(responseMap);
+               Double versionCode =  (Double) responseMap.get("versionCode");
+
+                System.out.println("code :::" + versionCode.intValue());
+
+
+            }
+        });
+
+
+    }
 
     public PackageInfo getPackageInfo() {
         if (mPackageInfo == null){

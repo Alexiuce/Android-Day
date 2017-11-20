@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.os.Environment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         setupUI();        // 设置UI
-//        checkVersion();   // 检测新版本 HttpURLConnect 请求网络
+      //  checkVersion();   // 检测新版本 HttpURLConnect 请求网络
         checkNewVersion();  // 检测新版本 OKHttp 请求网络
     }
     // 设置UI
@@ -75,21 +77,12 @@ public class SplashActivity extends AppCompatActivity {
                         while ((flag = inputStream.read(buffer)) != -1){
                             baos.write(buffer,0,flag);
                         }
-                        System.out.println(baos.toString());
-
-
                         Gson gson = new Gson();
-
                         Type mTpye = new TypeToken<Map<String,Object>>(){}.getType();
                         Map<String,Object> result = gson.fromJson(baos.toString(),mTpye);
                         System.out.println("resutl :" + result.toString());
                         baos.close();
-
-
-
                     }
-
-
                 } catch (MalformedURLException e) {
                     Log.i("Splash","url error");
 
@@ -103,7 +96,7 @@ public class SplashActivity extends AppCompatActivity {
         }.start();
     }
 
-//    检测新版本: 使用OKHttp发送网络请求
+    // 检测新版本: 使用OKHttp发送网络请求
     private  void checkNewVersion(){
         String url = "http://192.168.0.117:8999/";
         OkHttpClient okHttpClient = new OkHttpClient();
@@ -182,16 +175,15 @@ public class SplashActivity extends AppCompatActivity {
         builder.show();
     }
 
-
+    /* 进入Home 页面*/
     private void enterHome(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
 
-
-
-    public PackageInfo getPackageInfo() {
+    /* 获取app 包信息 */
+    private PackageInfo getPackageInfo() {
         if (mPackageInfo == null){
             try {
                 mPackageInfo = getPackageManager().getPackageInfo(getPackageName(),0);
@@ -201,5 +193,16 @@ public class SplashActivity extends AppCompatActivity {
         }
         return mPackageInfo;
     }
+
+    /* 下载更新的apk文件 */
+    private  void downloadApk(){
+        // 1. 检测SD卡是否可用
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){ // sd卡可用
+          String filepath =  Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "mobileSafe.apk";
+
+
+        }
+    }
+
 
 }

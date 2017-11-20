@@ -8,13 +8,18 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Map;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -35,13 +40,13 @@ public class SplashActivity extends AppCompatActivity {
         mVersionTextView.setText("版本号:"+ getPackageInfo().versionName);
     }
 
-    // 检测版本
+    // 检测版本(使用HttpURLConnection)
     private void  checkVersion(){
         new Thread(){
             @Override
             public void run() {
                 try {
-                    URL url = new URL("http://localhost:8088/newVersion");
+                    URL url = new URL("http://192.168.0.117:8999/");
 
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
@@ -59,18 +64,27 @@ public class SplashActivity extends AppCompatActivity {
                             baos.write(buffer,0,flag);
                         }
                         System.out.println(baos.toString());
+
+
+                        Gson gson = new Gson();
+
+                        Type mTpye = new TypeToken<Map<String,Object>>(){}.getType();
+                        Map<String,Object> result = gson.fromJson(baos.toString(),mTpye);
+                        System.out.println("resutl :" + result.toString());
                         baos.close();
+
+
 
                     }
 
 
                 } catch (MalformedURLException e) {
                     Log.i("Splash","url error");
-                    ToastHelper.showMessage(getApplicationContext(),"url error");
+
                     e.printStackTrace();
                 }catch (IOException e){
                     Log.i("Splash","input stream error");
-                    ToastHelper.showMessage(getApplicationContext(),"url error");
+
                     e.printStackTrace();
                 }
             }

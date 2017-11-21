@@ -98,7 +98,7 @@ public class SplashActivity extends AppCompatActivity {
 
     // 检测新版本: 使用OKHttp发送网络请求
     private  void checkNewVersion(){
-        String url = "http://192.168.0.117:8999/";
+        String url = "http://192.168.0.117:8088/newVersion";
         OkHttpClient okHttpClient = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
         Call call = okHttpClient.newCall(request);
@@ -129,7 +129,7 @@ public class SplashActivity extends AppCompatActivity {
                 Map responseMap = gson.fromJson(response.body().string(),mTpye);
                 System.out.println(responseMap);
                 Double versionCode =  (Double) responseMap.get("versionCode");
-                final String updateMsg = (String) responseMap.get("title");
+                final String updateMsg = (String) responseMap.get("updateMessage");
                 if (versionCode.intValue() > mPackageInfo.versionCode) {  // 有新版本 ,提示更新
                     System.out.println("need update version");
                     runOnUiThread(new Runnable() {
@@ -148,6 +148,8 @@ public class SplashActivity extends AppCompatActivity {
     /*显示更新提示对话框*/
     private void  showUpdateDialog(String msg){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // 禁用点击背景取消
+        builder.setCancelable(false);
         // 设置左上角图标
         builder.setIcon(R.mipmap.ic_launcher);
         // 设置标题

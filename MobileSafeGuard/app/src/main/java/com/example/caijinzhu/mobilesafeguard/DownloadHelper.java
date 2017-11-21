@@ -61,8 +61,8 @@ public class DownloadHelper {
                     }
                     fos.flush();  // 将缓存数据写入文件
                     // 下载完成
-                    listener.onDownloadSuccess();
-                }catch (IOException e){
+                    listener.onDownloadSuccess(file);
+                }catch (Exception e){
                     listener.onDownloadFailed(e);
                 }finally {
                     try {
@@ -85,9 +85,9 @@ public class DownloadHelper {
     /** 下载回调接口 */
     public interface DownloadHelperListener{
         /** 下载成功*/
-        void  onDownloadSuccess();
+        void  onDownloadSuccess(File file);
         /** 下载失败*/
-        void  onDownloadFailed(IOException error);
+        void  onDownloadFailed(Exception error);
         /** 下载进度*/
         void  onDownloadProgress(int progress);
 

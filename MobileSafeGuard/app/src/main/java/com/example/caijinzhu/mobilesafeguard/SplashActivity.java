@@ -1,9 +1,11 @@
 package com.example.caijinzhu.mobilesafeguard;
 
+import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -38,6 +40,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private TextView mVersionTextView;
     private PackageInfo mPackageInfo;
+    private String mDownloadURL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,6 +133,7 @@ public class SplashActivity extends AppCompatActivity {
                 System.out.println(responseMap);
                 Double versionCode =  (Double) responseMap.get("versionCode");
                 final String updateMsg = (String) responseMap.get("updateMessage");
+                mDownloadURL = (String) responseMap.get("downloadUrl");
                 if (versionCode.intValue() > mPackageInfo.versionCode) {  // 有新版本 ,提示更新
                     System.out.println("need update version");
                     runOnUiThread(new Runnable() {
@@ -161,6 +165,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // 下载新版本,更新
+                downloadApk();
 
             }
         });
@@ -200,11 +205,42 @@ public class SplashActivity extends AppCompatActivity {
     private  void downloadApk(){
         // 1. 检测SD卡是否可用
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){ // sd卡可用
-          String filepath =  Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "mobileSafe.apk";
+          String filepath =  Environment.getExternalStorageDirectory().getAbsolutePath() ;
+          String filename = "mobileSafe.apk";
+
+            DownloadHelper downloadHelper = new DownloadHelper(mDownloadURL, filepath, filename);
+            downloadHelper.startDownload(new DownloadHelper.DownloadHelperListener() {
+                @Override
+                public void onDownloadSuccess(File file) {
+                    System.out.println("下载成功");
+                    installNewApk(file);
+                }
+
+                @Override
+                public void onDownloadFailed(Exception error) {
+                    System.out.println("下载失败");
+                    error.printStackTrace();
+                }
+
+                @Override
+                public void onDownloadProgress(int progress) {
+
+                }
+            });
 
 
         }
     }
 
+    /** 安装新版本apk*/
+    private void installNewApk(File apkfile){
+        // 开启隐式意图,调用系统应用安装
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_DEFAULT);
+        intent.setDataAndType(Uri.fromFile(apkfile), "application/vnd.android.package-archive");
+
+        startActivity(intent);
+
+    }
 
 }

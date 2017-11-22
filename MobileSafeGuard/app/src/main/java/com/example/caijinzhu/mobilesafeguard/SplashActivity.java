@@ -207,7 +207,6 @@ public class SplashActivity extends AppCompatActivity {
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){ // sd卡可用
           String filepath =  Environment.getExternalStorageDirectory().getAbsolutePath() ;
           String filename = "mobileSafe.apk";
-
             DownloadHelper downloadHelper = new DownloadHelper(mDownloadURL, filepath, filename);
             downloadHelper.startDownload(new DownloadHelper.DownloadHelperListener() {
                 @Override
@@ -215,7 +214,6 @@ public class SplashActivity extends AppCompatActivity {
                     System.out.println("下载成功");
                     installNewApk(file);
                 }
-
                 @Override
                 public void onDownloadFailed(Exception error) {
                     System.out.println("下载失败");
@@ -227,8 +225,6 @@ public class SplashActivity extends AppCompatActivity {
 
                 }
             });
-
-
         }
     }
 

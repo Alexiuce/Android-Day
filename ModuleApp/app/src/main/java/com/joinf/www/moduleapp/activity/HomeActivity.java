@@ -4,8 +4,16 @@ package com.joinf.www.moduleapp.activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 
+import com.joinf.www.moduleapp.HttpTool.CommonRequest;
+import com.joinf.www.moduleapp.HttpTool.CommontClient;
 import com.joinf.www.moduleapp.R;
 import com.joinf.www.moduleapp.view.fragment.HomeFragment;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 public class HomeActivity extends BaseActivity {
 
@@ -27,10 +35,29 @@ public class HomeActivity extends BaseActivity {
         fragmentTransaction.replace(R.id.content_linearLayout,mHomeFragment);
         fragmentTransaction.commit();
 
+        httpTest();
 
     }
     /** 初始化UI*/
     private void initView(){
+
+    }
+
+    /** 网络请求测试*/
+    private void httpTest(){
+
+        CommontClient.sendRequest(CommonRequest.createGetRequest("https://httpbin.org/get",null), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                System.out.println(response.body().toString());
+            }
+        });
 
     }
 }

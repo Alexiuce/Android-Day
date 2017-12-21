@@ -6,6 +6,10 @@ import android.os.Bundle;
 
 import com.joinf.www.moduleapp.HttpTool.CommonRequest;
 import com.joinf.www.moduleapp.HttpTool.CommontClient;
+import com.joinf.www.moduleapp.HttpTool.HttpCallback.CommonJsonCallback;
+import com.joinf.www.moduleapp.HttpTool.HttpDataHandler;
+import com.joinf.www.moduleapp.HttpTool.HttpException;
+import com.joinf.www.moduleapp.HttpTool.HttpListener;
 import com.joinf.www.moduleapp.R;
 import com.joinf.www.moduleapp.view.fragment.HomeFragment;
 
@@ -46,18 +50,17 @@ public class HomeActivity extends BaseActivity {
     /** 网络请求测试*/
     private void httpTest(){
 
-        CommontClient.sendRequest(CommonRequest.createGetRequest("https://httpbin.org/get",null), new Callback() {
+        CommontClient.sendRequest(CommonRequest.createGetRequest("https://httpbin.org/get",null), new CommonJsonCallback(new HttpDataHandler(new HttpListener() {
             @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
-
+            public void onSuccess(Object response) {
+                System.out.println("server response :" + response.toString());
             }
 
             @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                System.out.println(response.body().toString());
+            public void onFailure(Object response) {
+                System.out.println("sever error");
             }
-        });
+        })));
 
     }
 }

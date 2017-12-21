@@ -1,5 +1,7 @@
 package com.joinf.www.moduleapp.HttpTool;
 
+import com.joinf.www.moduleapp.HttpTool.HttpCallback.CommonJsonCallback;
+
 import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.HostnameVerifier;
@@ -38,14 +40,14 @@ public class CommontClient {
         clientBuilder.followRedirects(true);  // 开启支持url重定向
 
         // https 支持
-        clientBuilder.hostnameVerifier(new HostnameVerifier() {
-            @Override
-            public boolean verify(String hostname, SSLSession session) {
-                return true;   // 信任任意类型的主机名称
-            }
-        });
+//        clientBuilder.hostnameVerifier(new HostnameVerifier() {
+//            @Override
+//            public boolean verify(String hostname, SSLSession session) {
+//                return true;   // 信任任意类型的主机名称
+//            }
+//        });
 
-        clientBuilder.sslSocketFactory(SSLUtils.getSSLSocketFactory(),SSLUtils.getTrustManager());
+//        clientBuilder.sslSocketFactory(SSLUtils.getSSLSocketFactory(),SSLUtils.getTrustManager());
 
         // 生成 client 对象
         mHttpClient = clientBuilder.build();
@@ -53,10 +55,10 @@ public class CommontClient {
 
     /** 发送http / https 请求
      * */
-    public static Call sendRequest(Request request, Callback commCallback){
+    public static Call sendRequest(Request request, CommonJsonCallback callback){
 
         Call call = mHttpClient.newCall(request);
-        call.enqueue(commCallback);
+        call.enqueue(callback);
         return call;
     }
 

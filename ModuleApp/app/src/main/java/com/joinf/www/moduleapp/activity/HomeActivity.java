@@ -36,7 +36,7 @@ public class HomeActivity extends BaseActivity {
         mHomeFragment = new HomeFragment();
         fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.content_linearLayout,mHomeFragment);
+        fragmentTransaction.add(R.id.content_linearLayout,mHomeFragment);
         fragmentTransaction.commit();
 
         httpTest();

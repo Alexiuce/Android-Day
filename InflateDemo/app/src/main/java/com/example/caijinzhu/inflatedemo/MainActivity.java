@@ -74,6 +74,11 @@ public class MainActivity extends AppCompatActivity {
         }
         viewPage.setAdapter(new ViewPagerAdapter());
         viewPage.setOnPageChangeListener(new ScrollListener());
+        //  设置当前位置为中间,并取整
+        int startIndex = Integer.MAX_VALUE / 2;
+
+        viewPage.setCurrentItem(startIndex - (startIndex % 5));
+
     }
 
 
@@ -94,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     private class ViewPagerAdapter extends PagerAdapter {
         @Override
         public int getCount() {
-            return pictureArray.size();
+            return Integer.MAX_VALUE;
         }
 
 
@@ -114,7 +119,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
             System.out.println("create image :" + position );
-            ImageView imageView =  pictureArray.get(position);
+
+            int count = pictureArray.size();
+            ImageView imageView =  pictureArray.get(position % count);
             container.addView(imageView);
             return imageView;
         }
@@ -141,11 +148,10 @@ public class MainActivity extends AppCompatActivity {
         public void onPageSelected(int position) {
             int count = pointContrainer.getChildCount();
             for (int i = 0; i < count; i ++){
-                pointContrainer.getChildAt(i).setEnabled(i == position);
+                pointContrainer.getChildAt(i).setEnabled(i == position % count);
             }
 
         }
-
         /** 滚动状态改变时调用*/
         @Override
         public void onPageScrollStateChanged(int state) {

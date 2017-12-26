@@ -54,13 +54,26 @@ public class MainActivity extends AppCompatActivity {
 
         pictureArray = new ArrayList<ImageView>();
 
+
+
         ImageView imgView;
         for (int i = 0; i < pictureIDArray.length; i++){
             imgView = new ImageView(this);
             imgView.setBackgroundResource(pictureIDArray[i]);
             pictureArray.add(imgView);
+
+            // 添加底部圆点指示器
+            View circleView = new View(this);
+            circleView.setBackgroundResource(R.drawable.circle_view_selector);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(20, 20);
+
+            layoutParams.leftMargin = i == 0 ? 0 :  20;
+            circleView.setEnabled(i == 0);
+            pointContrainer.addView(circleView,layoutParams);
+
         }
         viewPage.setAdapter(new ViewPagerAdapter());
+        viewPage.setOnPageChangeListener(new ScrollListener());
     }
 
 
@@ -100,17 +113,43 @@ public class MainActivity extends AppCompatActivity {
          * */
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
+            System.out.println("create image :" + position );
             ImageView imageView =  pictureArray.get(position);
             container.addView(imageView);
             return imageView;
         }
 
         /**
-         *  2.销毁 */
+         *  2.销毁屏幕外的item */
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
-
             container.removeView((View)object);
+        }
+    }
+
+
+    private class ScrollListener implements ViewPager.OnPageChangeListener{
+
+        /** 滚动时调用*/
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+        }
+
+        /** 条目被选中时调用*/
+        @Override
+        public void onPageSelected(int position) {
+            int count = pointContrainer.getChildCount();
+            for (int i = 0; i < count; i ++){
+                pointContrainer.getChildAt(i).setEnabled(i == position);
+            }
+
+        }
+
+        /** 滚动状态改变时调用*/
+        @Override
+        public void onPageScrollStateChanged(int state) {
+
         }
     }
 

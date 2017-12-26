@@ -46,6 +46,7 @@
         </android.support.v4.view.ViewPager>
 
         <LinearLayout
+            android:orientation="vertical"
             android:gravity="center_horizontal"
             android:layout_alignParentBottom="true"
             android:background="#66000000"
@@ -62,6 +63,7 @@
                 />
             <!--滚动圆点指示-->
             <LinearLayout
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal"
                 android:id="@+id/layout_pointContainer"
                 android:layout_width="wrap_content"

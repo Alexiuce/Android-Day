@@ -73,10 +73,12 @@ public class MainActivity extends AppCompatActivity {
 
         }
         viewPage.setAdapter(new ViewPagerAdapter());
+
         viewPage.setOnPageChangeListener(new ScrollListener());
-        //  设置当前位置为中间,并取整
+        //  设置当前位置为中间,并取整(保证初始位置始终为第一个)
         int startIndex = Integer.MAX_VALUE / 2;
 
+        // (实现左右无限滚动)
         viewPage.setCurrentItem(startIndex - (startIndex % 5));
 
     }
@@ -118,8 +120,7 @@ public class MainActivity extends AppCompatActivity {
          * */
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            System.out.println("create image :" + position );
-
+            
             int count = pictureArray.size();
             ImageView imageView =  pictureArray.get(position % count);
             container.addView(imageView);

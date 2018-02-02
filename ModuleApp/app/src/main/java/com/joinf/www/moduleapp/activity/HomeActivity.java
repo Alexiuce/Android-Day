@@ -3,6 +3,7 @@ package com.joinf.www.moduleapp.activity;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.view.View;
 
 import com.joinf.www.moduleapp.R;
 import com.joinf.www.moduleapp.view.fragment.HomeFragment;
@@ -22,11 +23,11 @@ public class HomeActivity extends BaseActivity {
         // 初始化页面的所有控件
         initView();
         // 添加默认显示的fragment
-        mHomeFragment = new HomeFragment();
-        fm = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.content_linearLayout,mHomeFragment);
-        fragmentTransaction.commit();
+//        mHomeFragment = new HomeFragment();
+//        fm = getFragmentManager();
+//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//        fragmentTransaction.add(R.id.content_linearLayout,mHomeFragment);
+//        fragmentTransaction.commit();
 
         httpTest();
 
@@ -40,6 +41,13 @@ public class HomeActivity extends BaseActivity {
 
     /** 网络请求测试*/
     private void httpTest(){
+
+
+
+    }
+
+
+    public void showCamera(View v){
 
 
 

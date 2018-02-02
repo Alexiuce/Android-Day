@@ -16,6 +16,12 @@
         android:layout_marginBottom="50dp"
         app:layout_constraintTop_toTopOf="parent">
 
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="camera"
+            android:onClick="showCamera"/>
     </LinearLayout>
 
     <LinearLayout

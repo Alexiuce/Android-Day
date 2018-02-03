@@ -1,5 +1,7 @@
 package com.alexcai.smartcitydemo;
 
+import android.animation.StateListAnimator;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,9 +18,10 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_layout);
+       ConstraintLayout layout = (ConstraintLayout)findViewById(R.id.constraintLayout_splash);
 
         /**添加动画效果*/
-        beginAnimation();
+        beginAnimation(layout);
     }
 
     /** 动画*/
@@ -52,10 +55,29 @@ public class SplashActivity extends AppCompatActivity {
         animationSet.addAnimation(rotateAnimation);
         animationSet.addAnimation(scaleAnimation);
         animationSet.addAnimation(alphaAnimation);
+        // 设置动画状态监听
+        animationSet.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                System.out.println("动画结束");
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
 
         // 添加动画集合到控件,并启动
 
         v.startAnimation(animationSet);
+
 
     }
 }

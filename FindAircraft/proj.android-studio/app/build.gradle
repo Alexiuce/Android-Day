@@ -4,7 +4,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "alexiuce.github.com"
@@ -12,6 +12,11 @@ android {
         targetSdkVersion PROP_TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
+
+
+        ndk{
+            abiFilters "armeabi", "armeabi-v7a"//, "x86" //CPU类型
+        }
 
         externalNativeBuild {
             ndkBuild {
@@ -34,7 +39,9 @@ android {
                     }
                     
                     arguments '-j' + Runtime.runtime.availableProcessors()
+
                     abiFilters.addAll(PROP_APP_ABI.split(':').collect{it as String})
+
                 }
             }
         }
@@ -53,6 +60,7 @@ android {
                 // skip the NDK Build step if PROP_NDK_MODE is none
                 path "jni/Android.mk"
             }
+
         }
     }
 

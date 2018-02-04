@@ -10,10 +10,14 @@
 USING_NS_CC;
 
 class StartScene : Scene {
-
+public:
     static Scene* createScene();
     bool init();
     CREATE_FUNC(StartScene)
+
+private:
+    void setupGameData();
+    void setuiGameUI();
 
 };
 

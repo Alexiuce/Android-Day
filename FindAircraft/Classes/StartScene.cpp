@@ -4,6 +4,10 @@
 
 #include "StartScene.h"
 
+static const int LeftTag = 100;
+static const int RightTag =101;
+static const int DownTag = 102;
+
 Scene* StartScene::createScene() {
 
     return StartScene::create();
@@ -18,8 +22,9 @@ bool StartScene::init() {
     // setupGameData
     setupGameData();
     // setupGameUI
-
-   setuiGameUI();
+    setuiGameUI();
+    //
+    startAnimation();
 
     return true;
 }
@@ -46,25 +51,47 @@ void StartScene::setuiGameUI() {
     float scale = Director::getInstance()->getContentScaleFactor();
 
     auto leftSprite = Sprite::createWithSpriteFrameName("leftAircraft.png");
+    leftSprite->setTag(LeftTag);
     leftSprite->setScale(scale);
-    leftSprite->setAnchorPoint(Vec2(1,1));
-    leftSprite->setPosition(Vec2(100 + leftSprite->getContentSize().width, winSize.height - 100));
+    leftSprite->setAnchorPoint(Vec2(0,1));
+    leftSprite->setPosition(Vec2(35, winSize.height - 100));
     CCLOG("sprite position {%f,%f}",leftSprite->getPosition().x,leftSprite->getPosition().y);
     CCLOG("sprite boundingbox {{%f,%f},{%f,%f}}",leftSprite->getBoundingBox().origin.x,leftSprite->getBoundingBox().origin.y,leftSprite->getBoundingBox().size.width,leftSprite->getBoundingBox().size.height);
     this->addChild(leftSprite);
 
     auto rightSprite = Sprite::createWithSpriteFrameName("leftAircraft.png");
+    rightSprite->setTag(RightTag);
     rightSprite->setScale(scale);
-    rightSprite->setAnchorPoint(Vec2(0,1));
-    rightSprite->setPosition(Vec2(winSize.width - 100, winSize.height - 100));
+    rightSprite->setAnchorPoint(Vec2(1,1));
+    rightSprite->setPosition(Vec2(winSize.width - 30, winSize.height - 100));
     this->addChild(rightSprite);
 
-    CCLOG("content scale %f", Director::getInstance()->getContentScaleFactor());
+    CCLOG("right {{%f%f,},{%f%f}}", rightSprite->getBoundingBox().origin.x,rightSprite->getBoundingBox().origin.y,rightSprite->getBoundingBox().size.width,rightSprite->getBoundingBox().size.height);
 
-    auto title = Label::createWithTTF("Find Aircraft", "fonts/Marker Felt.ttf",24);
-    title->setPosition(Vec2(winSize.width * 0.5,winSize.height*0.5));
+    auto downSprite = Sprite::createWithSpriteFrameName("downCraft.png");
+    downSprite->setTag(DownTag);
+    downSprite->setScale(scale);
+    downSprite->setPosition(Vec2(x,y));
+    this->addChild(downSprite);
 
-    title->setColor(Color3B::BLACK);
-    this->addChild(title);
+}
+
+void StartScene::startAnimation() {
+    Size winSize = Director::getInstance()->getWinSize();
+    auto leftSprite = this->getChildByTag(LeftTag);
+    auto rightSprite = this->getChildByTag(RightTag);
+    auto downSprite = this->getChildByTag(DownTag);
+    Node * spriteArray[] = {leftSprite,rightSprite,downSprite};
+    for (int i = 0; i < 3; ++i) {
+        auto node = spriteArray[i];
+        auto moveTo = MoveTo::create(1.0,Vec2(node->getPosition().x,winSize.height + node->getBoundingBox().size.height + 10));
+
+        auto callFunc = CallFunc::create([node](){
+            node->removeFromParent();
+            CCLOG("call func finished");
+        });
+        auto sequence = Sequence::create(moveTo,callFunc,NULL);
+        node->runAction(sequence);
+    }
 
 }

@@ -18,6 +18,7 @@ public:
 private:
     void setupGameData();
     void setuiGameUI();
+    void startAnimation();
 
 };
 

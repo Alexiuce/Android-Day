@@ -5,7 +5,7 @@ buildscript {
     ext.kotlin_version = '1.2.21'
 
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -16,10 +16,13 @@ apply plugin: 'kotlin'
 apply plugin: 'war'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
+    /* 添加javaEE 依赖 */
+    compile group: 'javax', name: 'javaee-api', version: '7.0'
+
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }

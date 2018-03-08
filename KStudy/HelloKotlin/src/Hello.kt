@@ -7,13 +7,16 @@ fun main(args:Array<String>){
 
     val aByte:Byte = Byte.MIN_VALUE
     val bByte:Byte = Byte.MAX_VALUE
-    println("a min" + aByte)
-    println("b max" + bByte)
+    println("a min $aByte")
+    println("b max $bByte")
 
-    val number1 = Math.pow(2.0,100.0)
+    test()
+    println(Student(20,"alex"))
 
 }
 
+
+data class Student(val sid: Int, val name: String)
 
 fun test(){
     println("test func run")

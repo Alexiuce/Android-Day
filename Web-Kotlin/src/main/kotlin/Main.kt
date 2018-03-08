@@ -8,13 +8,11 @@ import javax.servlet.http.HttpServletResponse
  */
 
 
-@WebServlet("/seller")
-class QuickStartServlet : HttpServlet() {
-
+@WebServlet("/home")
+class HomeController: HttpServlet(){
+    /* get */
     override fun doGet(req: HttpServletRequest?, resp: HttpServletResponse?) {
-        println(req.toString())
-        resp?.writer?.write("hello kotlin servlet")
+        resp?.writer?.write("HomeController ..")
+
     }
-
-
 }

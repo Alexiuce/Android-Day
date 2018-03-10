@@ -7,12 +7,14 @@ import javax.servlet.http.HttpServletResponse
  * Created by caijinzhu on 2018/2/13.
  */
 
-@WebServlet(name = "Hello", value = "/hello")
+
+@WebServlet("/seller")
 class QuickStartServlet : HttpServlet() {
 
     override fun doGet(req: HttpServletRequest?, resp: HttpServletResponse?) {
+        println(req.toString())
         resp?.writer?.write("hello kotlin servlet")
-
     }
+
 
 }

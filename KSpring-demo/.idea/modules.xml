@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinSpring.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinSpring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinSpring_main.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinSpring_main.iml" group="KotlinSpring" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KotlinSpring_test.iml" filepath="$PROJECT_DIR$/.idea/modules/KotlinSpring_test.iml" group="KotlinSpring" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KSpring.iml" filepath="$PROJECT_DIR$/.idea/modules/KSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KSpring_main.iml" filepath="$PROJECT_DIR$/.idea/modules/KSpring_main.iml" group="KSpring" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KSpring_test.iml" filepath="$PROJECT_DIR$/.idea/modules/KSpring_test.iml" group="KSpring" />
     </modules>
   </component>
 </project>

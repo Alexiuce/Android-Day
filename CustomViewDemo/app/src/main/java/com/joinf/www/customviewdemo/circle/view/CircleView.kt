@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
 import android.view.View
-import java.util.jar.Attributes
+
 
 /**
  * author: caijinzhu
@@ -14,8 +14,9 @@ import java.util.jar.Attributes
  * date: 2018/3/13
  */
 
+class CircleView constructor(context: Context): View(context){
 
-class CircleView constructor(context: Context) : View(context){
+
 
     private val paint = Paint()
 
@@ -35,5 +36,4 @@ class CircleView constructor(context: Context) : View(context){
         canvas?.drawArc(arc,270.0f,120.0f,true,paint)
 
     }
-
 }

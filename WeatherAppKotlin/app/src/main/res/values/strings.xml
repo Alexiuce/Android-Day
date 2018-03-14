@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeatherKotlinApp</string>
+    <string name="hello_world">Hello Kotlin World</string>
+</resources>

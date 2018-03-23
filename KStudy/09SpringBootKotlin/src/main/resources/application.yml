@@ -4,6 +4,7 @@ server:
     context-path: /kt
 
 
-cupSize: C
-age: 20
-name: zhilin
+girl:
+  cupSize: D
+  age: 19
+  name: zhilling

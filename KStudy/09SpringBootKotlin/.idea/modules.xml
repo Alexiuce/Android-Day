@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/09SpringBootKotlin.iml" filepath="$PROJECT_DIR$/09SpringBootKotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_main.iml" group="09SpringBootKotlin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_test.iml" group="09SpringBootKotlin" />
+    </modules>
+  </component>
+</project>

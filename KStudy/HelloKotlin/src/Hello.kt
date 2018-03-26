@@ -1,6 +1,7 @@
 /**
- * Created by caijinzhu on 2018/2/12.
+ * Created by Alexcai on 2018/2/14.
  */
+
 
 fun main(args:Array<String>){
     println("hello kotlin")
@@ -20,4 +21,5 @@ data class Student(val sid: Int, val name: String)
 
 fun test(){
     println("test func run")
+
 }

@@ -1,5 +1,6 @@
 package alexiuce.github.com.downloaderdemo
 
+import android.content.BroadcastReceiver
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     private fun setupUI(){
         textView.text = "good file name"
     }
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         mFile = DownloadFileInfo("node-v8.10.0.pkg",
                 "https://nodejs.org/dist/v8.10.0/node-v8.10.0.pkg",
                 path)
+
     }
     private fun setupEventHandle(){
         button.setOnClickListener{

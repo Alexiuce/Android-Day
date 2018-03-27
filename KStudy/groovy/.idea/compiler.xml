@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="groovy_main" target="1.8" />
       <module name="groovy_test" target="1.8" />
+      <module name="model_main" target="1.8" />
+      <module name="model_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

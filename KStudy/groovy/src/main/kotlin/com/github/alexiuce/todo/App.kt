@@ -1,5 +1,6 @@
 package com.github.alexiuce.todo
 
+import ItemModel
 /**
  * Created by caijinzhu on 2018/3/26.
  */
@@ -14,4 +15,8 @@ fun main(args: Array<String>) {
         println(item)
         input = readLine()
     }
+
+    val itemMode = ItemModel("hello mode for item")
+    println(itemMode)
+
 }

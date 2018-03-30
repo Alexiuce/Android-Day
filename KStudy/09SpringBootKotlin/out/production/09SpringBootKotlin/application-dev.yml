@@ -1,0 +1,10 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /kt
+
+
+girl:
+  cupSize: D
+  age: 19
+  name: zhilling

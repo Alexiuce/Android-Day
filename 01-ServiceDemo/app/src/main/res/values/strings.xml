@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ServiceKotlinDemo</string>
+    <string name="service_start">Start Service</string>
+    <string name="service_stop">Stop Service</string>
+</resources>

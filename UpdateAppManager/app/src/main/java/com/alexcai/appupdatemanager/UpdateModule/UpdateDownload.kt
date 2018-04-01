@@ -27,7 +27,7 @@ class UpdateDownload(val downloadUrl: String, val savePath: String): Runnable{
             connection.setRequestProperty("Connection","Keep-Alive")
             connection.connect()   // 开启链接请求
             downloadFileLenght = connection.contentLength
-            
+
         }
 
     }

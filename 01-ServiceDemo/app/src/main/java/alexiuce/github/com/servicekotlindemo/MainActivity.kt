@@ -45,4 +45,9 @@ fun MainActivity.addEventListen(){
         /** 不能多次unbindService */
         unbindService(this)
     }
+
+    button3.setOnClickListener{
+        val s = DemoService()
+        s.testExample(this)
+    }
 }

@@ -8,6 +8,7 @@ import android.os.IBinder
 import android.telecom.TelecomManager
 import android.telephony.PhoneStateListener
 import android.telephony.TelephonyManager
+import android.widget.Toast
 
 /**
  * author: caijinzhu
@@ -17,6 +18,11 @@ import android.telephony.TelephonyManager
 class DemoService: Service() {
 
 
+
+    /**
+     * 本地服务:自己应用的服务
+     * 远程服务:其他应用的服务
+     * */
     
     override fun onBind(intent: Intent?): IBinder {
         println("on Bind")
@@ -42,4 +48,10 @@ class DemoService: Service() {
         println("on destroy")
     }
 
+}
+
+fun DemoService.testExample(ctx: Context){
+    println("service test example")
+
+    Toast.makeText(ctx,"service test example",Toast.LENGTH_SHORT).show()
 }

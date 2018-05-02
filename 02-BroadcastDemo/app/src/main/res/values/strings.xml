@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BroadcastApplication</string>
+    <string name="ol_btn">无序Broadcast</string>
 </resources>

@@ -1,0 +1,4 @@
+#Sat Dec 23 13:29:15 CST 2017
+base.0=/Users/Alexcai/GitApp/Android-Day/SmartCityDemo/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/Alexcai/GitApp/Android-Day/SmartCityDemo/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

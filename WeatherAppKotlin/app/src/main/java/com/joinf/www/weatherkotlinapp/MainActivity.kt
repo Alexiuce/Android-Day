@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         forecast_list.layoutManager = LinearLayoutManager(this)
         forecast_list.adapter = ForecastListAdapter(items)
 
+
     }
 
     fun toast(message: String, length: Int = Toast.LENGTH_SHORT){

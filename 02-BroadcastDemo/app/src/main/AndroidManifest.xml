@@ -25,6 +25,11 @@
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL"></action>
             </intent-filter>
         </receiver>
+        <receiver android:name=".MYBroadcastReceiver">
+            <intent-filter>
+                <action android:name="MYBroadcast"/>
+            </intent-filter>
+        </receiver>
 
     </application>
 

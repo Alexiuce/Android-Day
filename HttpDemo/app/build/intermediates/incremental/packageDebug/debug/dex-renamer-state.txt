@@ -1,0 +1,4 @@
+#Sun Nov 05 18:18:52 CST 2017
+base.0=/Users/Alexcai/GitApp/Android-Day/HttpDemo/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/Alexcai/GitApp/Android-Day/HttpDemo/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

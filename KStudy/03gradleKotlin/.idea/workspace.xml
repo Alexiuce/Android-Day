@@ -69,8 +69,8 @@
       <file leaf-file-name="HelloKotlin.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state relative-caret-position="621">
+              <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -977,12 +977,12 @@
       <workItem from="1526721300441" duration="1067000" />
       <workItem from="1526727092094" duration="785000" />
       <workItem from="1526880042998" duration="338000" />
-      <workItem from="1526880430945" duration="1352000" />
+      <workItem from="1526880430945" duration="1486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6059000" />
+    <option name="totallyTimeSpent" value="6193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
@@ -1194,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state relative-caret-position="621">
+          <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
         </state>
       </provider>
     </entry>

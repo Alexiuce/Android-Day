@@ -69,7 +69,7 @@
       <file leaf-file-name="HelloKotlin.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
+            <state relative-caret-position="951">
               <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
             </state>
           </provider>
@@ -977,12 +977,12 @@
       <workItem from="1526721300441" duration="1067000" />
       <workItem from="1526727092094" duration="785000" />
       <workItem from="1526880042998" duration="338000" />
-      <workItem from="1526880430945" duration="1486000" />
+      <workItem from="1526880430945" duration="1538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6193000" />
+    <option name="totallyTimeSpent" value="6245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
@@ -997,7 +997,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32818183" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32545453" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32545453" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -1194,7 +1194,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
+        <state relative-caret-position="951">
           <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
         </state>
       </provider>

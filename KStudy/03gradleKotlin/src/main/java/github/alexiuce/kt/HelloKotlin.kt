@@ -82,7 +82,22 @@ fun main(args: Array<String>) {
 
     println(meizi is CPerson)  /* 判断是否是某个类的或其子类 */
 
+
+    /** 可选类型 */
+    val opt: String? = "Hello"
+    println(opt!!.length)    /* !! 对可选类型进行强制解包,如果可选类型为null 则crash */
+
+    val name = fetchName() ?: return    /* ?: 运算符 如果条件成立则执行 ?:前的 否则执行后面的 */
+    println(name)
+
+    /* as(如果转换失败,会抛出异常) & as?(转换失败,则为null) 类型转换 */
+
+    val ch = HelloKotlin() as? CPerson
+    println(ch)
+
     HelloKotlin::class.constructors.map(::println)
+
+    println(getName().length)
 }
 
 
@@ -106,3 +121,15 @@ class HelloKotlin{
     }
 }
 
+/* 函数
+* func 函数名(参数lieb): 返回值类型{
+* }
+* */
+
+fun getName(): String{
+    return "alexiuce"
+}
+
+fun fetchName(): String?{
+    return "xiuce"
+}

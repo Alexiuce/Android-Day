@@ -28,6 +28,7 @@ fun main(args: Array<String>) {
     println(34L)
     println(aNumber)
     println(Long.MAX_VALUE)
+
     val addNumber: Long = num.toLong() + aNumber      /* 基本数据类型转换, 需要调用toXXX() 方法 */
     println(addNumber)
 
@@ -77,10 +78,26 @@ fun main(args: Array<String>) {
     /** 类 */
     println(Person(21,"ajax"))
 
+    val meizi = Meizi("温柔","good","sweet")
+
+    println(meizi is CPerson)  /* 判断是否是某个类的或其子类 */
 
     HelloKotlin::class.constructors.map(::println)
 }
 
+
+open class CPerson(var 性格: String, var 长相: String, var 声音: String){
+    init {
+        println("get a ${this.javaClass.simpleName}....")
+    }
+}
+
+/** 类的继承
+ *  Kotlin 中,所有类都间接的继承自 Any
+ *  自定义类默认都是final类型,不能被继承
+ *  open 的类可以继承
+ * */
+class Meizi(sl: String, face: String, voice: String):CPerson(sl,face,voice)
 
 
 class HelloKotlin{

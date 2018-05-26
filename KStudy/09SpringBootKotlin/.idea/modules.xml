@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/09SpringBootKotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/09SpringBootKotlin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/09SpringBootKotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/09SpringBootKotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_main.iml" group="09SpringBootKotlin" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/09SpringBootKotlin_test.iml" group="09SpringBootKotlin" />
     </modules>

@@ -51,8 +51,8 @@
       <file leaf-file-name="HelloKotlin.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="547">
+              <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -488,10 +488,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="566" />
-    <option name="width" value="80" />
-    <option name="height" value="22" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2048" />
+    <option name="height" value="1130" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -993,15 +993,15 @@
       <workItem from="1526880430945" duration="1538000" />
       <workItem from="1526959682164" duration="240000" />
       <workItem from="1526959940873" duration="61000" />
-      <workItem from="1526960435298" duration="3249000" />
+      <workItem from="1526960435298" duration="3550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9795000" />
+    <option name="totallyTimeSpent" value="10096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
+    <frame x="0" y="22" width="2048" height="1130" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1014,7 +1014,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17641596" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17641596" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -1299,8 +1299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="547">
+          <caret line="104" column="10" lean-forward="true" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
         </state>
       </provider>
     </entry>

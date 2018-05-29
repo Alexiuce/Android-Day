@@ -14,7 +14,19 @@ fun test(){
     println(result)
 }
 
+fun rangTest(){
+    val r1: IntRange = 0..100        /* range : 0 ~ 100 */
+    for (i in r1.iterator()){
+        println(i)
+    }
+    println("=================")
+    val r2: IntRange = 0 until 50     /* range : 0 ~ 49 */
+    for (i in r2.iterator()){
+        print(i)
+    }
+    println( 30 in r1)
 
+}
 
 
 
@@ -25,4 +37,7 @@ fun main(args: Array<String>) {
     "World".forEach {
         println(it)
     }
+
+    rangTest()
+
 }

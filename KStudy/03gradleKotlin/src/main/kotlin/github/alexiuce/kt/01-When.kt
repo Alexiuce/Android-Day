@@ -16,6 +16,13 @@ fun test(){
 
 
 
+
+
 fun main(args: Array<String>) {
     test()
+    println("hello".isEmpty())
+
+    "World".forEach {
+        println(it)
+    }
 }

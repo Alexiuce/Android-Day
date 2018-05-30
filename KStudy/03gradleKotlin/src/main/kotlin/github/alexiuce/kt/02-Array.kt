@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     val strings: Array<String> = arrayOf("hello","world")
 
 
-    /* val 运行时常量 
+    /* val 运行时常量
     *  const val : 定义编译期常量, 类似c/c++ 中的define
     * */
 

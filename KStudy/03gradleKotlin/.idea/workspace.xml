@@ -57,11 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02-Array.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="02-Array.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/02-Array.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03-function.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/03-function.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -496,6 +505,7 @@
         <option value="$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/01-When.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/02-Array.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/03-function.kt" />
       </list>
     </option>
   </component>
@@ -508,10 +518,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="566" />
-    <option name="width" value="80" />
-    <option name="height" value="22" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="178" />
+    <option name="y" value="71" />
+    <option name="width" value="1486" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -585,7 +596,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.github.alexiuce.kt._02_ArrayKt">
+  <component name="RunManager" selected="Kotlin.github.alexiuce.kt._03_functionKt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -682,6 +693,16 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="github.alexiuce.kt._02_ArrayKt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="github.alexiuce.kt._03_functionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="03gradle_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="github.alexiuce.kt._03_functionKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
@@ -1002,9 +1023,11 @@
       <item itemvalue="Kotlin.github.alexiuce.kt.HelloKotlinKt" />
       <item itemvalue="Kotlin.github.alexiuce.kt._01_WhenKt" />
       <item itemvalue="Kotlin.github.alexiuce.kt._02_ArrayKt" />
+      <item itemvalue="Kotlin.github.alexiuce.kt._03_functionKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.github.alexiuce.kt._03_functionKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt._02_ArrayKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt._01_WhenKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt.HelloKotlinKt" />
@@ -1030,15 +1053,15 @@
       <workItem from="1526959682164" duration="240000" />
       <workItem from="1526959940873" duration="61000" />
       <workItem from="1526960435298" duration="3249000" />
-      <workItem from="1527654713259" duration="2143000" />
+      <workItem from="1527654713259" duration="3029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13795000" />
+    <option name="totallyTimeSpent" value="14681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
+    <frame x="178" y="71" width="1486" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1051,11 +1074,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39368618" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21933623" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49154454" visible="true" weight="0.14007977" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49154454" visible="true" weight="0.19459833" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32938388" />
       <window_info id="Structure" order="1" sideWeight="0.50845546" side_tool="true" weight="0.14007977" />
@@ -1407,7 +1430,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/02-Array.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/03-function.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>

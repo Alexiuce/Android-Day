@@ -19,11 +19,12 @@ fun main(args: Array<String>) {
     ints.sliceArray(0..2).forEach { println(it) }
 
 
-    ints.forEach { println(it) }
+    ints.forEach(::println)
 
     println("------------------")
     println(chars.joinToString(""))
     chars.forEach {
+        if (it == 'b') return
         println(it)
     }
     for (i in strings){

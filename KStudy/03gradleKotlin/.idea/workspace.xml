@@ -66,11 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03-function.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03-function.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/03-function.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+            <state relative-caret-position="239">
+              <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04-class.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/04-class.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -506,6 +515,7 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/01-When.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/02-Array.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/03-function.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/04-class.kt" />
       </list>
     </option>
   </component>
@@ -596,20 +606,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.github.alexiuce.kt._02_ArrayKt">
+  <component name="RunManager" selected="Kotlin.github.alexiuce.kt._04_classKt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="HelloJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="github.alexiuce.kt.HelloJava" />
-      <module name="03gradle_main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.alexiuce.kt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -703,6 +702,16 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="github.alexiuce.kt._03_functionKt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="github.alexiuce.kt._04_classKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="03gradle_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="github.alexiuce.kt._04_classKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
@@ -1019,19 +1028,19 @@
       <envs />
     </configuration>
     <list>
-      <item itemvalue="Application.HelloJava" />
       <item itemvalue="Kotlin.github.alexiuce.kt.HelloKotlinKt" />
       <item itemvalue="Kotlin.github.alexiuce.kt._01_WhenKt" />
       <item itemvalue="Kotlin.github.alexiuce.kt._02_ArrayKt" />
       <item itemvalue="Kotlin.github.alexiuce.kt._03_functionKt" />
+      <item itemvalue="Kotlin.github.alexiuce.kt._04_classKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.github.alexiuce.kt._04_classKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt._02_ArrayKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt._03_functionKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt._01_WhenKt" />
         <item itemvalue="Kotlin.github.alexiuce.kt.HelloKotlinKt" />
-        <item itemvalue="Application.HelloJava" />
       </list>
     </recent_temporary>
   </component>
@@ -1054,12 +1063,12 @@
       <workItem from="1526959940873" duration="61000" />
       <workItem from="1526960435298" duration="3249000" />
       <workItem from="1527654713259" duration="3029000" />
-      <workItem from="1527749727421" duration="1562000" />
+      <workItem from="1527749727421" duration="2566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16243000" />
+    <option name="totallyTimeSpent" value="17247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
@@ -1120,13 +1129,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/01-When.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1472,8 +1474,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/03-function.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+        <state relative-caret-position="239">
+          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/04-class.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>

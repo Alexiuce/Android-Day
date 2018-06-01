@@ -11,16 +11,23 @@ data class Clomplex(var real: Double, var imaginary: Double){
         val ai = imaginary + other.imaginary
         return Clomplex(ar,ai)
     }
+
+    /* 自定义运算符
+    * 使用 中缀 infix(双目运算)  */
+    infix fun BigThan(other: Clomplex): Boolean{
+        return real > other.real
+    }
+
 }
 
 
 
 fun main(args: Array<String>) {
 
-    val a = Clomplex(12.0,23.3)
+    val a = Clomplex(32.0,23.3)
     val b = Clomplex(22.1, 11.2)
     val c = a + b
     println(c)
-
+    println(a BigThan b)   // BigThan 是自定义的运算操作符号
 
 }

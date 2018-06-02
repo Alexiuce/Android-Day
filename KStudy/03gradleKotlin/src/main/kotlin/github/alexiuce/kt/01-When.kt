@@ -33,6 +33,7 @@ fun rangTest(){
 fun main(args: Array<String>) {
     test()
     println("hello".isEmpty())
+    println("hello".isNotEmpty())
 
     "World".forEach {
         println(it)

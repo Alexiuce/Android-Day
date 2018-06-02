@@ -114,8 +114,8 @@
       <file leaf-file-name="08-try.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/08-try.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="269">
+              <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -559,9 +559,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="187" />
+    <option name="y" value="96" />
+    <option name="width" value="950" />
+    <option name="height" value="608" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1095,16 +1097,15 @@
       <workItem from="1527749727421" duration="2724000" />
       <workItem from="1527755500036" duration="3000" />
       <workItem from="1527841023916" duration="2723000" />
-      <workItem from="1527905399279" duration="2894000" />
+      <workItem from="1527905399279" duration="3062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23025000" />
+    <option name="totallyTimeSpent" value="23193000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="187" y="96" width="950" height="608" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1115,12 +1116,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32818183" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3018182" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20156556" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4891697" visible="true" weight="0.18240343" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4891697" visible="true" weight="0.280837" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.2509091" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32938388" />
@@ -1507,8 +1508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/08-try.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="269">
+          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
         </state>
       </provider>
     </entry>

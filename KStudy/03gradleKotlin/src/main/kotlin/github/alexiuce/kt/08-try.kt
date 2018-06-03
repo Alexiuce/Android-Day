@@ -29,7 +29,10 @@ package github.alexiuce.kt
 
 fun my_plus(arg1: Int, arg2:Int): Int = arg1 + arg2
 
-
+fun my_test(vararg ages: Int, name: String){
+    println(name)
+    ages.forEach(::println)
+}
 
 
 fun main(args: Array<String>) {
@@ -43,5 +46,9 @@ fun main(args: Array<String>) {
     /* 具名参数调用函数 */
     val a = my_plus(1,arg2 = 3)
     println(a)
+
+    my_test(1,3,5,name = "goo")
+    val myi = intArrayOf(1,2,3,5)
+    my_test(*myi,name = "array ")   // 使用*+Array可以自动展开内部元素传递给变长参数
 
 }

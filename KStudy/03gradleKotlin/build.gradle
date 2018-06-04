@@ -15,6 +15,12 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'kotlin'
 
+// 导出可执行app时需要使用下面两句
+
+apply plugin: 'application'
+mainClassName = 'github.alexiuce.kt.01-When'
+
+
 sourceCompatibility = 1.8
 
 repositories {

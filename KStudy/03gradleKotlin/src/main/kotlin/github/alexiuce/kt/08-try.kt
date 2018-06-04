@@ -34,6 +34,15 @@ fun my_test(vararg ages: Int, name: String){
     ages.forEach(::println)
 }
 
+//  add demo
+//  类, when表达式 lambde表达式
+//
+
+fun my_cacl_test(){
+    val result = Caculate("*").cacl(2,3)
+    println("cacl result is $result")
+}
+
 
 fun main(args: Array<String>) {
 
@@ -50,5 +59,8 @@ fun main(args: Array<String>) {
     my_test(1,3,5,name = "goo")
     val myi = intArrayOf(1,2,3,5)
     my_test(*myi,name = "array ")   // 使用*+Array可以自动展开内部元素传递给变长参数
+
+
+    my_cacl_test()
 
 }

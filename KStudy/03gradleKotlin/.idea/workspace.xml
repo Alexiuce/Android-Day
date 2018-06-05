@@ -71,8 +71,8 @@
       <file leaf-file-name="09-InterfaceClass.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/09-InterfaceClass.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -583,8 +583,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="376" />
-    <option name="y" value="26" />
+    <option name="x" value="340" />
+    <option name="y" value="61" />
     <option name="width" value="1541" />
     <option name="height" value="1022" />
   </component>
@@ -1123,20 +1123,20 @@
       <workItem from="1527905399279" duration="3062000" />
       <workItem from="1528018565804" duration="820000" />
       <workItem from="1528094234015" duration="2383000" />
-      <workItem from="1528160914098" duration="2031000" />
+      <workItem from="1528160914098" duration="2087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29042000" />
+    <option name="totallyTimeSpent" value="29098000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="376" y="26" width="1541" height="1022" extended-state="0" />
+    <frame x="340" y="61" width="1541" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32324323" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32324323" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -1144,7 +1144,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23675676" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2312566" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3837838" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -1535,8 +1535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/kt/09-InterfaceClass.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>

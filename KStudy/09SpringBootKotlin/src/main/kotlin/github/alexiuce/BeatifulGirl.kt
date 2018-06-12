@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component
 
 
 @Component
-@ConfigurationProperties("girl")
-class BeatifulGirl{
+@ConfigurationProperties(prefix = "girl")
+ class BeatifulGirl{
     lateinit var cupSize: String
     lateinit var name: String
     var age: Int = 0

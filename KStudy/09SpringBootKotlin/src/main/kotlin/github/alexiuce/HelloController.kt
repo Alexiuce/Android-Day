@@ -25,7 +25,8 @@ class HelloController{
     @GetMapping("/say")
     fun say(@RequestParam("id",required =false,defaultValue = "0" ) uid: Int): String {
 
-        return "Hello ${girl.name} , your cupSize is ${girl.cupSize} ,your age is ${girl.age}~ your request id is $uid"
+    return "hello kotlin server"
+//        return "Hello ${girl.name} , your cupSize is ${girl.cupSize} ,your age is ${girl.age}~ your request id is $uid"
     }
 
 }

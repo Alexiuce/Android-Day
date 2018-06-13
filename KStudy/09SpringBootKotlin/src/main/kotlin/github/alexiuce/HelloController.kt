@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*
  */
 
 @RestController
-@RequestMapping("/hello")
 class HelloController{
 
      @Autowired
@@ -22,11 +21,15 @@ class HelloController{
 //    var age: Int = 0
 
 //    @RequestMapping(value = "/say", method = arrayOf(RequestMethod.GET))
-    @GetMapping("/say")
-    fun say(@RequestParam("id",required =false,defaultValue = "0" ) uid: Int): String {
+    @RequestMapping("/say")
+    fun say(): String {
 
     return "hello kotlin server"
-//        return "Hello ${girl.name} , your cupSize is ${girl.cupSize} ,your age is ${girl.age}~ your request id is $uid"
+    }
+    @RequestMapping("/")
+    fun hello(): String{
+        return "Hello ${girl.name} , your cupSize is ${girl.cupSize} ,your age is ${girl.age}~ "
+
     }
 
 }

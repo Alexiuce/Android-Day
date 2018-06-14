@@ -116,8 +116,8 @@
       <file leaf-file-name="HelloKotlin.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="405">
+              <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -1169,12 +1169,12 @@
       <workItem from="1528160914098" duration="2087000" />
       <workItem from="1528687025388" duration="603000" />
       <workItem from="1528876907955" duration="883000" />
-      <workItem from="1528953414045" duration="1132000" />
+      <workItem from="1528953414045" duration="1906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31716000" />
+    <option name="totallyTimeSpent" value="32490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
@@ -1191,11 +1191,11 @@
       <window_info anchor="right" id="Kotlin Bytecode" weight="0.32951146" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29340762" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29340762" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3837838" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4891697" visible="true" weight="0.20289132" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4891697" visible="true" weight="0.20289132" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32901296" />
       <window_info id="Structure" order="1" sideWeight="0.51083034" side_tool="true" weight="0.18240343" />
@@ -1582,8 +1582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/github/alexiuce/kt/HelloKotlin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="405">
+          <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
         </state>
       </provider>
     </entry>

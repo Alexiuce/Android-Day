@@ -107,6 +107,8 @@ fun main(args: Array<String>) {
     HelloKotlin::class.constructors.map(::println)
 
     println(getName().length)
+    
+
 }
 
 

@@ -1,5 +1,7 @@
 package github.alexiuce.kt
 
+import java.math.BigDecimal
+
 /**
  * Created by caijinzhu on 2018/3/8.
  */
@@ -16,7 +18,7 @@ fun main(args: Array<String>) {
 
     println("========= Int ============")
     val num: Int = 8
-    println(num)
+    println(num.hashCode())
     println(Int.MAX_VALUE)
     val binnum: Int = 0b1100
     val hexnum: Int = 0xFF
@@ -58,6 +60,13 @@ fun main(args: Array<String>) {
     println("========= Char, String ============")
     val aChar: Char = 'a'
     println(aChar)
+
+
+    /** */
+    println("========= BigDecimal ============")
+    val money: BigDecimal = BigDecimal("1.23456789123")
+    println(money)
+
 
     val aString: String = "Hello world"
     val bString: String = String(charArrayOf('H','e','l','l','o',' ','w','o','r','l','d'))

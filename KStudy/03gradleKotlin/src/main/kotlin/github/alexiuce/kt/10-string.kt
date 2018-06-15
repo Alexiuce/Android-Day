@@ -47,6 +47,18 @@ fun main(args: Array<String>) {
     println(str.substring(0, 6))
     println(str.substringAfter("l"))
     println(str.substringAfterLast("n"))
-    
+
+
+    /* 二元元组 与 三元元组 */
+    val p = Pair("Jobs",33)
+
+    println("${p.first}, ${p.second}")
+    val p1 = "Tom" to 19   /* 简写 */
+    println(p1)
+
+    /* 三元元组 */
+    val t = Triple("Bills",30,"new york")
+    println(t)
+
 
 }

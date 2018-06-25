@@ -2,7 +2,11 @@ group 'github.alexiuce'
 version '1.0-SNAPSHOT'
 
 buildscript {
+<<<<<<< HEAD
+    ext.kotlin_version = '1.2.31'
+=======
     ext.kotlin_version = '1.2.50'
+>>>>>>> 43e379f6554ea8a08cabaf3270e1a2ec44fcfff9
 
     repositories {
         jcenter()

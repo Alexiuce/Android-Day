@@ -8,6 +8,7 @@ package github.alexiuce
 
 
 
+
 fun my_add(a: Int,b:Int): Int{
     return a + b
 }
@@ -31,4 +32,31 @@ fun main(args: Array<String>) {
     val xcadd: (Int,Int)->Int = {a:Int,b:Int -> a + b}  // 匿名函数
     println(xcadd(1, 2))
 
+
+    getUserName("abc.com")
+
+    printNumber(2,12,3,3)
+
+}
+
+
+/*  默认参数和具名参考
+
+* 通过默认参数,可以减少使用方法的重载
+具名参数: 调用函数时,通过参数名来指定具体值,这种方式时可以忽略调用函数时,参数的顺序问题
+* */
+
+
+fun getUserName(url: String,params: String = "GET"){
+    println("path=$url, para= $params")
+}
+
+
+
+
+/*   可变参数 vararg
+* */
+
+fun printNumber(vararg a: Int){
+    a.forEach { println(it) }
 }

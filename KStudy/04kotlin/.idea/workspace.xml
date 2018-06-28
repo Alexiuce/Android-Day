@@ -65,13 +65,13 @@
       <file leaf-file-name="05-funcExpression.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/05-funcExpression.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="586">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="06-exception(异常).kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="06-exception(异常).kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/06-exception(异常).kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -79,6 +79,15 @@
               <folding>
                 <element signature="e#25#100#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07-递归.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/07-递归.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -527,8 +536,9 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/03-array.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/04-when.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/05-funcExpression.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/06-exception(异常).kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/05-funcExpression.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/github/alexiuce/07-递归.kt" />
       </list>
     </option>
   </component>
@@ -612,7 +622,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.github.alexiuce._06_exception_异常_Kt">
+  <component name="RunManager" selected="Kotlin.github.alexiuce._07_递归Kt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -670,16 +680,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="github.alexiuce._02_whileloopKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="04kotlin_main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="github.alexiuce._02_whileloopKt" />
-      <option name="WORKING_DIRECTORY" />
-    </configuration>
     <configuration name="github.alexiuce._03_arrayKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="04kotlin_main" />
       <option name="VM_PARAMETERS" />
@@ -718,6 +718,16 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="github.alexiuce._06_exception_异常_Kt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="github.alexiuce._07_递归Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="04kotlin_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="github.alexiuce._07_递归Kt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
@@ -1031,19 +1041,19 @@
       <envs />
     </configuration>
     <list>
-      <item itemvalue="Kotlin.github.alexiuce._02_whileloopKt" />
       <item itemvalue="Kotlin.github.alexiuce._03_arrayKt" />
       <item itemvalue="Kotlin.github.alexiuce._04_whenKt" />
       <item itemvalue="Kotlin.github.alexiuce._05_funcExpressionKt" />
       <item itemvalue="Kotlin.github.alexiuce._06_exception_异常_Kt" />
+      <item itemvalue="Kotlin.github.alexiuce._07_递归Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.github.alexiuce._07_递归Kt" />
         <item itemvalue="Kotlin.github.alexiuce._06_exception_异常_Kt" />
         <item itemvalue="Kotlin.github.alexiuce._05_funcExpressionKt" />
         <item itemvalue="Kotlin.github.alexiuce._04_whenKt" />
         <item itemvalue="Kotlin.github.alexiuce._03_arrayKt" />
-        <item itemvalue="Kotlin.github.alexiuce._02_whileloopKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1067,12 +1077,12 @@
       <workItem from="1529994164391" duration="188000" />
       <workItem from="1529994356208" duration="4000" />
       <workItem from="1529995234170" duration="1892000" />
-      <workItem from="1530069112989" duration="1949000" />
+      <workItem from="1530069112989" duration="3572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16910000" />
+    <option name="totallyTimeSpent" value="18533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
@@ -1088,11 +1098,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34261838" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34261838" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18494517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18494517" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1118,18 +1128,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/01-forloop.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/02-whileloop.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1413,13 +1421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/03-array.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/04-when.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1450,8 +1451,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/05-funcExpression.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="586">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/03-array.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1462,6 +1470,13 @@
           <folding>
             <element signature="e#25#100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/github/alexiuce/07-递归.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>

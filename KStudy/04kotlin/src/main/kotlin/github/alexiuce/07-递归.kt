@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
 //    println(fabonaqi(7))
 
     println(rec_sum(10))
+    println(rec_trail_sum(10))
 
 }
 
@@ -42,5 +43,19 @@ fun rec_sum(n: Int): Int{
    return when(n) {
         1 -> 1
     else -> rec_sum(n - 1) + n
+    }
+}
+
+/* 尾递归方式(只有尾递归才可以优化)
+*
+* 1. 将递归转换为尾递归
+* 2. 在方法前添加关键字 tailrec
+* */
+
+
+tailrec fun rec_trail_sum(n: Int, result: Int = 0): Int{
+    return when(n){
+        1 -> result + 1
+        else -> rec_trail_sum(n -1,result + n)
     }
 }

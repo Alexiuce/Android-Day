@@ -41,6 +41,30 @@ class Girl{
     }
 }
 
+
+class Teacher{
+    // 等级
+    var level = 0
+    // 薪资
+    var salary = 6000
+
+    /* 重载 ++ 运算 */
+   operator fun inc(): Teacher{
+        this.level++
+        this.salary += 1000
+        return this
+    }
+}
+
+fun demo2(){
+    var t1 = Teacher()
+    println("level= ${t1.level},salary=${t1.salary}")
+    t1++
+    println("level= ${t1.level},salary=${t1.salary}")
+
+}
+
+
 fun main(args: Array<String>) {
 
     val g1 = Girl()
@@ -49,4 +73,8 @@ fun main(args: Array<String>) {
     val g2 = Girl()
     println(g1 + g2)
 
+    demo2()
+
 }
+
+

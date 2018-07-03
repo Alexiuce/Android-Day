@@ -1,23 +1,21 @@
 /* 构造方法 */
 
+class Son( name: String,  age: Int){
+    var name = ""
+    var age = 0
+    var phone = ""
+     /* 构造方法 */
+    init {
 
+        this.name = name
+        this.age = age
+    }
 
-
-
-
-class Person1(var name: String, var age: Int){
-
-    
-
+    /* 次构造方法 */
+    constructor(name: String, age: Int,  phone: String): this(name,age){
+        this.phone = phone
+    }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -25,6 +23,6 @@ class Person1(var name: String, var age: Int){
 
 fun main(args: Array<String>) {
 
-    val p1 = Person1("job",20)
+    val p1 = Son("job", 20)
     println(p1.name)
 }

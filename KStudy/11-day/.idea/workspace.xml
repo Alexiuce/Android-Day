@@ -15,7 +15,7 @@
       <file leaf-file-name="01-operation.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="465">
               <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
               <folding>
                 <element signature="e#1#563#0" expanded="true" />
@@ -33,11 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03-init.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03-init.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/03-init.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04-abstractClass&amp;interface.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+              <folding>
+                <element signature="e#5#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +70,7 @@
         <option value="$PROJECT_DIR$/src/02-Get&amp;Set.kt" />
         <option value="$PROJECT_DIR$/src/alexiuc/init/03-init.kt" />
         <option value="$PROJECT_DIR$/src/03-init.kt" />
+        <option value="$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt" />
       </list>
     </option>
   </component>
@@ -71,8 +84,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
-    <option name="y" value="110" />
+    <option name="x" value="358" />
+    <option name="y" value="134" />
     <option name="width" value="1440" />
     <option name="height" value="878" />
   </component>
@@ -81,6 +94,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,9 +113,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.alexiuc.init._03_initKt">
+  <component name="RunManager" selected="Kotlin._04_abstractClass_interfaceKt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -177,6 +190,16 @@
       <option name="MAIN_CLASS_NAME" value="_03_initKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="_04_abstractClass_interfaceKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="11-day" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="_04_abstractClass_interfaceKt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -200,13 +223,14 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Kotlin._03_initKt" />
       <item itemvalue="Kotlin._01_operationKt" />
       <item itemvalue="Kotlin._02_Get_SetKt" />
-      <item itemvalue="Kotlin.alexiuc.init._03_initKt" />
+      <item itemvalue="Kotlin._04_abstractClass_interfaceKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.alexiuc.init._03_initKt" />
+        <item itemvalue="Kotlin._04_abstractClass_interfaceKt" />
         <item itemvalue="Kotlin._02_Get_SetKt" />
         <item itemvalue="Kotlin._01_operationKt" />
       </list>
@@ -226,19 +250,19 @@
       <workItem from="1530431668181" duration="967000" />
       <workItem from="1530497891839" duration="2608000" />
       <workItem from="1530592648139" duration="2902000" />
+      <workItem from="1530683752738" duration="2174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6595000" />
+    <option name="totallyTimeSpent" value="8769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="279" y="110" width="1440" height="878" extended-state="0" />
-    <editor active="true" />
+    <frame x="358" y="134" width="1440" height="878" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32961932" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290653" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -246,11 +270,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5927771" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21510884" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -273,6 +297,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding>
+            <element signature="e#1#563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/02-Get&amp;Set.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/03-init.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -319,7 +367,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="465">
           <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
           <folding>
             <element signature="e#1#563#0" expanded="true" />
@@ -343,8 +391,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/03-init.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <folding>
+            <element signature="e#5#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

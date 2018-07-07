@@ -12,13 +12,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="01-operation.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="01-operation.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1079">
+            <state relative-caret-position="1200">
               <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="e#1#563#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04-abstractClass&amp;interface.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+              <folding>
+                <element signature="e#5#117#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,6 +76,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -82,7 +95,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,14 +234,15 @@
       <workItem from="1530592648139" duration="2902000" />
       <workItem from="1530683752738" duration="2175000" />
       <workItem from="1530875188436" duration="92000" />
+      <workItem from="1530962833420" duration="547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8862000" />
+    <option name="totallyTimeSpent" value="9409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -245,7 +258,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -255,11 +268,11 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290653" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3290653" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +282,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#1#563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -325,7 +348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/01-operation.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
+        <state relative-caret-position="1200">
           <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="e#1#563#0" expanded="true" />
@@ -342,6 +365,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/03-init.kt" />
-    <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt" />
+    <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding>
+            <element signature="e#5#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

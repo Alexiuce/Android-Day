@@ -50,6 +50,10 @@ interface RideRun{
 
 
 
+/*  嵌套类和内部类
+
+
+ * */
 
 fun main(args: Array<String>) {
 

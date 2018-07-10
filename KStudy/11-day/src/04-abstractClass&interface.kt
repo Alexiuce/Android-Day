@@ -29,6 +29,7 @@ class CHuman: Human(), RideRun{
         println("kuaizi...")
     }
 
+
 }
 
 

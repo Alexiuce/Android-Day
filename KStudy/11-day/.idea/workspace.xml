@@ -27,8 +27,8 @@
       <file leaf-file-name="04-abstractClass&amp;interface.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="208">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
                 <element signature="e#5#117#0" expanded="true" />
               </folding>
@@ -65,7 +65,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="878" />
@@ -229,15 +229,15 @@
       <workItem from="1530683752738" duration="2175000" />
       <workItem from="1530875188436" duration="92000" />
       <workItem from="1530962833420" duration="565000" />
-      <workItem from="1531211956312" duration="533000" />
+      <workItem from="1531211956312" duration="1038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9960000" />
+    <option name="totallyTimeSpent" value="10465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -382,8 +382,8 @@
     <entry file="file://$PROJECT_DIR$/src/03-init.kt" />
     <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="208">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
             <element signature="e#5#117#0" expanded="true" />
           </folding>

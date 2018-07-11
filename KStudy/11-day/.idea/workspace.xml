@@ -24,13 +24,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04-abstractClass&amp;interface.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04-abstractClass&amp;interface.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+            <state relative-caret-position="552">
+              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
               <folding>
                 <element signature="e#5#117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05-泛型.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/05-泛型.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="e#1#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/alexiuc/init/03-init.kt" />
         <option value="$PROJECT_DIR$/src/03-init.kt" />
         <option value="$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt" />
+        <option value="$PROJECT_DIR$/src/05-泛型.kt" />
       </list>
     </option>
   </component>
@@ -120,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin._04_abstractClass_interfaceKt">
+  <component name="RunManager" selected="Kotlin._05_泛型Kt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -180,6 +193,16 @@
       <option name="MAIN_CLASS_NAME" value="_04_abstractClass_interfaceKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="_05_泛型Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="11-day" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="_05_泛型Kt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -207,9 +230,11 @@
       <item itemvalue="Kotlin._01_operationKt" />
       <item itemvalue="Kotlin._02_Get_SetKt" />
       <item itemvalue="Kotlin._04_abstractClass_interfaceKt" />
+      <item itemvalue="Kotlin._05_泛型Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._05_泛型Kt" />
         <item itemvalue="Kotlin._04_abstractClass_interfaceKt" />
         <item itemvalue="Kotlin._02_Get_SetKt" />
         <item itemvalue="Kotlin._01_operationKt" />
@@ -235,12 +260,12 @@
       <workItem from="1530962833420" duration="565000" />
       <workItem from="1531211956312" duration="1038000" />
       <workItem from="1531216838425" duration="203000" />
-      <workItem from="1531274714402" duration="746000" />
+      <workItem from="1531274714402" duration="1887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11414000" />
+    <option name="totallyTimeSpent" value="12555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -428,10 +453,20 @@
     <entry file="file://$PROJECT_DIR$/src/03-init.kt" />
     <entry file="file://$PROJECT_DIR$/src/04-abstractClass&amp;interface.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+        <state relative-caret-position="552">
+          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
           <folding>
             <element signature="e#5#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/05-泛型.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

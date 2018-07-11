@@ -79,9 +79,10 @@ class OutClass{
     var name = "alex-ce"
 
     inner class InClass{
-
+        val name = "xiuce"
         fun sayH(){
-            println(name)
+            // 内部类访问外部类时,使用this@外部类名.属性名 
+            println("${this@OutClass.name}")
         }
     }
 

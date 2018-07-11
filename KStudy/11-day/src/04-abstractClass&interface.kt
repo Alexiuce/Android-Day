@@ -52,14 +52,51 @@ interface RideRun{
 
 
 
-/*  嵌套类和内部类
-
-
+/*  嵌套类
+1. 嵌套类属于静态类
+2. 与外部类没有任何关系
  * */
+
+
+
+class OuterClass{
+
+    val name = "alex"
+    class InnerClass{
+        fun say(){
+//            println(name)
+        }
+    }
+}
+
+/* 内部类
+* 1. 在嵌套类前面添加关键字: inner
+*
+* */
+
+
+class OutClass{
+    var name = "alex-ce"
+
+    inner class InClass{
+
+        fun sayH(){
+            println(name)
+        }
+    }
+
+}
+
 
 fun main(args: Array<String>) {
 
-    val man = CHuman()
-    man.rideBike()
+//    val man = CHuman()
+//    man.rideBike()
+    // 创建嵌套类对象
+    val inner = OuterClass.InnerClass()
+    inner.say()
+    // 创建内部类对象
+    val inc1 = OutClass().InClass()
+    inc1.sayH()
 
 }

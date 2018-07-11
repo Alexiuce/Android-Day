@@ -29,20 +29,34 @@ class Apple: Fruit()
 class Banana: Fruit()
 
 
+/* ========================================== */
 
+/* 泛型函数 */
 
-
+fun <T>funcname(p: T){
+    when (p) {
+        is Int -> println("Int type")
+        is Double -> println("Double type")
+        is String -> println("String type")
+        else -> println("don't know type")
+    }
+}
 
 
 
 
 fun main(args: Array<String>) {
 
+    // 使用泛型类
     val b = Box<String>("alex")
     println(b.thing)
 
     val a = Apple()
     val fb = FBox(a)
     println(fb.thing)
+
+    // 使用泛型函数
+    funcname("hello")
+    funcname(b)
 
 }

@@ -65,3 +65,13 @@ class Desktop{
     var inMoney = 0
 }
 
+/* by lazy 懒加载
+* 1. val定义的字段(属性)才有惰性效果
+* 2. by lazy 可以单独使用或者在成员变量中使用
+* 3. by lazy 返回值是最后一条语句
+* 4. by lazy 是线程安全的
+* */
+
+class LMan{
+    val name: String by lazy { "alex" }
+}

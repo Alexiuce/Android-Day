@@ -74,4 +74,12 @@ class Desktop{
 
 class LMan{
     val name: String by lazy { "alex" }
+
+
+    // 延时加载,在使用的时候再进行赋值
+    // 1. lateinit 可以单独使用
+    // 2. lateinit 与var 类型的变量使用
+    lateinit var uid: String
 }
+
+lateinit var name123: String

@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>) {
 
 
@@ -8,10 +10,25 @@ fun main(args: Array<String>) {
     println(canGetMoney(son2))
 
 
-    var bs = arrayListOf<String>("a1","a2","a3")
+
+    // listof 集合不能添加和修改元素
+    var bs = listOf("a1","a2","a3")
+
     bs.forEach {
         println(it)
     }
+
+    /* 可变集合*/
+    val l1 = mutableListOf("li","zhang","wang")
+
+    l1.add("zhaoa")
+    l1.set(1,"jing")
+    l1.forEach {
+        println(it)
+    }
+    /* HashTable : 线程安全
+    * HashMap: 线程不安全
+    * */
 
 
 }

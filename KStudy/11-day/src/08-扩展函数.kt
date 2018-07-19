@@ -28,7 +28,7 @@ fun String.myCheck(): Boolean{
 *  1. kotlin 中使用object 代替class 定义单利
 *  2. object中所有的字段都是静态,方法不是静态
 *  3. object 对字段不多时比较合适
-*  4. kotlin mei没有static 关键字
+*  4. kotlin 没有static 关键字
 * */
 
 

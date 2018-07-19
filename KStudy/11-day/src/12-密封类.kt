@@ -8,6 +8,12 @@ fun main(args: Array<String>) {
     println(canGetMoney(son2))
 
 
+    var bs = arrayListOf<String>("a1","a2","a3")
+    bs.forEach {
+        println(it)
+    }
+
+
 }
 
 /* 密封类: 类似加强化的枚举

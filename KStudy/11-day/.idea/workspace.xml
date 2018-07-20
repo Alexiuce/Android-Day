@@ -12,65 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="07-委托.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/07-委托.kt">
+      <file leaf-file-name="14-闭包.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/14-闭包.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="08-扩展函数.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/08-扩展函数.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="09-伴生对象.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/09-伴生对象.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10-枚举.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/10-枚举.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11-数据类.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/11-数据类.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="12-密封类.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/12-密封类.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="13-集合.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/13-集合.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            <state relative-caret-position="75">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -101,6 +47,7 @@
         <option value="$PROJECT_DIR$/src/08-扩展函数.kt" />
         <option value="$PROJECT_DIR$/src/12-密封类.kt" />
         <option value="$PROJECT_DIR$/src/13-集合.kt" />
+        <option value="$PROJECT_DIR$/src/14-闭包.kt" />
       </list>
     </option>
   </component>
@@ -173,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin._13_集合Kt">
+  <component name="RunManager" selected="Kotlin._14_闭包Kt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -192,16 +139,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="_08_扩展函数Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="11-day" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="_08_扩展函数Kt" />
-      <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration name="_10_枚举Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="11-day" />
@@ -243,6 +180,16 @@
       <option name="MAIN_CLASS_NAME" value="_13_集合Kt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="_14_闭包Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="11-day" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="_14_闭包Kt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -266,19 +213,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Kotlin._08_扩展函数Kt" />
       <item itemvalue="Kotlin._10_枚举Kt" />
       <item itemvalue="Kotlin._11_数据类Kt" />
       <item itemvalue="Kotlin._12_密封类Kt" />
       <item itemvalue="Kotlin._13_集合Kt" />
+      <item itemvalue="Kotlin._14_闭包Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._14_闭包Kt" />
         <item itemvalue="Kotlin._13_集合Kt" />
         <item itemvalue="Kotlin._12_密封类Kt" />
         <item itemvalue="Kotlin._11_数据类Kt" />
         <item itemvalue="Kotlin._10_枚举Kt" />
-        <item itemvalue="Kotlin._08_扩展函数Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -310,12 +257,12 @@
       <workItem from="1531873084343" duration="207000" />
       <workItem from="1531873297517" duration="1008000" />
       <workItem from="1531958159039" duration="2289000" />
-      <workItem from="1532044731684" duration="1045000" />
+      <workItem from="1532044731684" duration="1240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23988000" />
+    <option name="totallyTimeSpent" value="24183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -363,13 +310,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/07-委托.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/08-扩展函数.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -734,7 +674,14 @@
     <entry file="file://$PROJECT_DIR$/src/13-集合.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/14-闭包.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>

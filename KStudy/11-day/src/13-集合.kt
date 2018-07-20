@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>) {
 
 /* 可变集合*/
@@ -28,8 +30,25 @@ fun main(args: Array<String>) {
     set2.add("fbb")
     set2.forEach { println(it) }
     println("=======Tree Set 有序set =======")
-   
 
+    // treeSet 如果存储对象类,需要实现comparable 接口,
+
+    val t1 = TreeSet<String>()
+    t1.add("a")
+    t1.add("b")
+    t1.forEach { println(it) }
+
+
+
+    println("======== Map 集合 ======")
+    val m1 = mapOf("a" to "A","b" to "B","c" to "C")
+    m1.keys.forEach { println(it) }  // 遍历key
+    m1.values.forEach { println(it) } // 遍历values
+    m1.entries.forEach { println(it) }  // kev values 遍历
+    m1.forEach { t, u ->
+        println("ket =$t")
+        println("value = $u")
+    }
 }
 
 

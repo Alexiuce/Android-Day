@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
 
 
-    // 1. 使用变量保存lambda
+    // 1. 使用变量保存lambda, lambda中返回值是最后一行,不需要使用return语句;
     val block = {a: Int, b: Int -> a + b}
     val result = block(1,4)
     println(result)

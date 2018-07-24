@@ -6,7 +6,11 @@ fun main(args: Array<String>) {
     val result = block(1,4)
     println(result)
 
-    // 2. 
+    // 2. lambda 中使用it隐含参数(lambda只有一个参数时)
+    val r = haha(1){
+        it + 10
+    }
+    println(r)
 }
 
 

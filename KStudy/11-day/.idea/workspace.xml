@@ -24,8 +24,8 @@
       <file leaf-file-name="16-lambda.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/16-lambda.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -270,12 +270,12 @@
       <workItem from="1531958159039" duration="2289000" />
       <workItem from="1532044731684" duration="1505000" />
       <workItem from="1532304079387" duration="1909000" />
-      <workItem from="1532391597347" duration="511000" />
+      <workItem from="1532391597347" duration="961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26868000" />
+    <option name="totallyTimeSpent" value="27318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -693,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/16-lambda.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="120">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 
     val r1 = myCacl(1,3,{m,n -> m + n })
     println(r1)
-    
+
     // 3. 函数的最后一个参数是lambda时,可以把()移到前面
     val r2 = myCacl(2,3){m,n ->
         m + n

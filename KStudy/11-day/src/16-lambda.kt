@@ -14,7 +14,9 @@ fun main(args: Array<String>) {
     /* 3. 常见的lambda
     * forEach: 是扩展函数,它的参数是一个函数,
     * indexOfFirst: 是array的扩展函数,参数是一个函数
-    *
+    * filter:扩展函数,有一个参数是函数类型,这个函数中的参数的类型是集合元素的类型,返回值是Boolean
+    * filterTo: 扩展函数,过滤元素到指定的一个集合中
+    * filterIndex: 带索引过滤
     * */
 
     val str = "abckdef"

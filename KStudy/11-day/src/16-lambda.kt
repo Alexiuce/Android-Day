@@ -11,7 +11,11 @@ fun main(args: Array<String>) {
         it + 10
     }
     println(r)
-    /* 3. 常见的lambda */
+    /* 3. 常见的lambda
+    * forEach: 是扩展函数,它的参数是一个函数,
+    * indexOfFirst: 是array的扩展函数,参数是一个函数
+    *
+    * */
 
     val str = "abckdef"
     str.forEach(::myPrint)

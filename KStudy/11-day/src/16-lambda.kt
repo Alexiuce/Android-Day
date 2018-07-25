@@ -11,9 +11,18 @@ fun main(args: Array<String>) {
         it + 10
     }
     println(r)
+    /* 3. 常见的lambda */
+
+    val str = "abckdef"
+    str.forEach(::myPrint)
 }
 
 
 fun haha(a: Int,block:(Int)->Int): Int{
     return block(a)
 }
+
+fun myPrint(c:Char){
+    println(c)
+}
+

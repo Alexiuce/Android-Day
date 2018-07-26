@@ -17,10 +17,21 @@ fun main(args: Array<String>) {
     * filter:扩展函数,有一个参数是函数类型,这个函数中的参数的类型是集合元素的类型,返回值是Boolean
     * filterTo: 扩展函数,过滤元素到指定的一个集合中
     * filterIndex: 带索引过滤
+    * sorted: 排序
+    * groupBy: 分组
     * */
 
     val str = "abckdef"
     str.forEach(::myPrint)
+
+
+    val l1 = listOf("z","d","b")
+    println(l1.sorted())  // 排序
+    println(l1.sortedDescending())  // 倒序
+
+    /* 4. 分组 */
+
+
 }
 
 

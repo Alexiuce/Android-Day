@@ -29,7 +29,12 @@ fun main(args: Array<String>) {
     println(l1.sorted())  // 排序
     println(l1.sortedDescending())  // 倒序
 
-    /* 4. 分组 */
+    /* 4. 分组 groupBy */
+    /* 5. 最值 Max,Min */
+    /* 6. 去重 toSet, distinct */
+    /* 7. 拆分 partition */
+    /* 8. 重组 map */
+
 
 
 }

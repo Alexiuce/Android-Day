@@ -34,6 +34,7 @@ fun main(args: Array<String>) {
     /* 6. 去重 toSet, distinct */
     /* 7. 拆分 partition */
     /* 8. 重组 map */
+    /* 9. 求和 sumBy / sumByDouble */
 
 
 

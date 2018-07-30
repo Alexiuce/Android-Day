@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
 
     println(list1)
 
-    /** 3. with函数
+    /** 3. with函数(不是扩展函数)
      * 是独立函数,可以任意地方调用
      * 需要两个参数
      * 第一个参数可以是任意类型
@@ -37,6 +37,22 @@ fun main(args: Array<String>) {
         add("当归")
     }
     println(list1)
+
+    /** 4. run函数
+     * 任意类型都有run扩展函数
+     * 参数是带接受者的函数,接收者就是调用者本身
+     * run函数返回值是就是参数函数的返回值
+     *
+     * */
+
+    list1.run {
+        add("茯苓")
+    }
+
+    println(list1)
+
+
+
 }
 
 

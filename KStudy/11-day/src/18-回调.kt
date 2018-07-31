@@ -6,13 +6,16 @@ fun main(args: Array<String>) {
 
 
     sm.buySoy {
-    println("买到 ${it.name} 酱油")
-
-    println("开始做饭")
-
+        println("买到 ${it.name} 酱油")
+        println("开始做饭")
     }
 
     println("做甜点")
+
+    /*1. list 补充
+    *  list.count{ it.name == "xxx"}  返回集合中符合条件的元素数量   
+    *
+    * */
 
 
 }

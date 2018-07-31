@@ -1,3 +1,4 @@
+import java.util.*
 import kotlin.concurrent.thread
 
 fun main(args: Array<String>) {
@@ -13,10 +14,15 @@ fun main(args: Array<String>) {
     println("做甜点")
 
     /*1. list 补充
-    *  list.count{ it.name == "xxx"}  返回集合中符合条件的元素数量   
-    *
+    *  list.count{ it.name == "xxx"}  返回集合中符合条件的元素数量
     * */
 
+    /*2 通过Calendar 获取当前时间 */
+    val year = Calendar.getInstance().get(Calendar.YEAR)
+    println(year)
+    val y = 23 in 20 until  30 // ==  [20,30) ;    // 20..30 == [20,30]
+
+    println(y)
 
 }
 

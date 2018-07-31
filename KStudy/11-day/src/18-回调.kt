@@ -1,6 +1,19 @@
-
+import kotlin.concurrent.thread
 
 fun main(args: Array<String>) {
+
+    val sm = SuperMarket()
+
+
+    sm.buySoy {
+    println("买到 ${it.name} 酱油")
+
+    println("开始做饭")
+
+    }
+
+    println("做甜点")
+
 
 }
 
@@ -11,3 +24,24 @@ fun main(args: Array<String>) {
  * 4. 在具有接口能力的对象中接收数据
  *
  * */
+
+
+class SuperMarket{
+    fun buySoy(callback: (Soy)-> Unit): Unit{
+        Thread {
+            val soy = Soy("海天")
+            callback(soy)
+        }.start()
+
+    }
+
+}
+
+class Mother{
+
+}
+
+
+class Soy(var name: String){
+
+}

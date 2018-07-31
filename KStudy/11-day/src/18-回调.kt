@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.concurrent.thread
 
@@ -23,6 +24,12 @@ fun main(args: Array<String>) {
     val y = 23 in 20 until  30 // ==  [20,30) ;    // 20..30 == [20,30]
 
     println(y)
+
+    /*3. SimpleDateFormat 时间格式化 */
+    val df = SimpleDateFormat("yyyy-MM-dd")
+    val time = df.parse("2016-10-13").time
+    println(time)
+
 
 }
 

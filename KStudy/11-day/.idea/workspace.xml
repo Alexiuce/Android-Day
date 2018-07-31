@@ -33,10 +33,10 @@
       <file leaf-file-name="18-回调.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/18-回调.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -289,12 +289,12 @@
       <workItem from="1532563368043" duration="1238000" />
       <workItem from="1532649615168" duration="962000" />
       <workItem from="1532908888166" duration="1537000" />
-      <workItem from="1532995826258" duration="1348000" />
+      <workItem from="1532995826258" duration="1588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34266000" />
+    <option name="totallyTimeSpent" value="34506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -670,10 +670,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/18-回调.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#84#0" expanded="true" />
           </folding>
         </state>
       </provider>

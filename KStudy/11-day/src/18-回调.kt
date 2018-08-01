@@ -30,6 +30,14 @@ fun main(args: Array<String>) {
     val time = df.parse("2016-10-13").time
     println(time)
 
+    /*4. map: 重组集合, flatmap : 平铺+重组 */
+
+
+
+    val sa = listOf(Soy("a"),Soy("b"),Soy("c"))
+
+
+
 
 }
 

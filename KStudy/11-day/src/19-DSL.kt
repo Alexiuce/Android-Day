@@ -14,16 +14,16 @@ fun main(args: Array<String>) {
     /*1. 使用DSL方式实现上面的效果 */
 
     val dsl = person {
-
+        name = "张曼玉"
     }
     println(dsl)
 
 }
 
 
-fun person(block: ()->Unit): DPerson{
+fun person(block: DPerson.()->Unit): DPerson{
     val p = DPerson()
-
+     p.block()
     return p
 }
 

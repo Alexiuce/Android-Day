@@ -45,8 +45,8 @@
       <file leaf-file-name="19-DSL.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/19-DSL.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="e#0#76#1" expanded="true" />
               </folding>
@@ -158,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin._18_回调Kt">
+  <component name="RunManager" selected="Kotlin._19_DSLKt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -177,16 +177,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="_14_闭包Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="11-day" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="_14_闭包Kt" />
-      <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration name="_15_高阶函数Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="11-day" />
@@ -228,6 +218,16 @@
       <option name="MAIN_CLASS_NAME" value="_18_回调Kt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="_19_DSLKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="11-day" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="_19_DSLKt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -251,19 +251,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Kotlin._14_闭包Kt" />
       <item itemvalue="Kotlin._15_高阶函数Kt" />
       <item itemvalue="Kotlin._16_lambdaKt" />
       <item itemvalue="Kotlin._17_四大函数Kt" />
       <item itemvalue="Kotlin._18_回调Kt" />
+      <item itemvalue="Kotlin._19_DSLKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._19_DSLKt" />
         <item itemvalue="Kotlin._18_回调Kt" />
         <item itemvalue="Kotlin._17_四大函数Kt" />
         <item itemvalue="Kotlin._16_lambdaKt" />
         <item itemvalue="Kotlin._15_高阶函数Kt" />
-        <item itemvalue="Kotlin._14_闭包Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -304,12 +304,12 @@
       <workItem from="1532908888166" duration="1537000" />
       <workItem from="1532995826258" duration="1702000" />
       <workItem from="1533082075265" duration="762000" />
-      <workItem from="1533168486772" duration="252000" />
+      <workItem from="1533168486772" duration="776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35634000" />
+    <option name="totallyTimeSpent" value="36158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -688,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/19-DSL.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="e#0#76#1" expanded="true" />
           </folding>

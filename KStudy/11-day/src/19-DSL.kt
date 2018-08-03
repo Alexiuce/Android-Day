@@ -15,9 +15,20 @@ fun main(args: Array<String>) {
 
     val dsl = person {
         name = "张曼玉"
+        address {
+
+        }
     }
     println(dsl)
 
+}
+
+
+
+fun DPerson.address(block : DAddress.()->Unit){
+    val addr = DAddress()
+    addr.block()
+    this.address = addr
 }
 
 
@@ -29,6 +40,6 @@ fun person(block: DPerson.()->Unit): DPerson{
 
 
 // 地址信息
-data class DAddress(var city: String, var street: String, var number: Int)
+data class DAddress(var city: String = "", var street: String ="", var number: Int = 0)
 // 人物信息
 data class DPerson(var name: String = "", var age: Int = 0, var address: DAddress? = null )

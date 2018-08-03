@@ -11,12 +11,17 @@ fun main(args: Array<String>) {
     val addr = DAddress("深圳","深南大道",23)
     val person = DPerson("关之琳",30,addr)
 
-    /*1. 使用DSL方式实现上面的效果 */
+    /*1. 使用DSL方式实现上面的效果
+    * 1.1 定义函数, 参数是lambda ,并且是带类字面值的 ,函数的返回值是类本身
+    * 1.2
+    *
+    *
+    * */
 
     val dsl = person {
         name = "张曼玉"
         address {
-
+            city = "深圳"
         }
     }
     println(dsl)
@@ -26,16 +31,19 @@ fun main(args: Array<String>) {
 
 
 fun DPerson.address(block : DAddress.()->Unit){
-    val addr = DAddress()
-    addr.block()
-    this.address = addr
+//    val addr = DAddress()
+//    addr.block()
+//    this.address = addr
+
+    this.address = DAddress().apply(block)
 }
 
 
 fun person(block: DPerson.()->Unit): DPerson{
-    val p = DPerson()
-     p.block()
-    return p
+//    val p = DPerson()
+//     p.block()
+//    return p
+    return DPerson().apply(block)
 }
 
 

@@ -24,6 +24,9 @@ open class Tag(var name: String){
         sb.append("<$name>")
 
 
+        tagList.forEach {
+            sb.append(it.toString())
+        }
 
         sb.append("</$name>")
 

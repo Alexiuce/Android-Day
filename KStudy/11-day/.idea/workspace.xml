@@ -57,8 +57,8 @@
       <file leaf-file-name="20-DSL-HTML.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/20-DSL-HTML.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="405">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -168,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin._19_DSLKt">
+  <component name="RunManager" selected="Kotlin._20_DSL_HTMLKt">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -187,16 +187,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="_15_高阶函数Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="11-day" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="_15_高阶函数Kt" />
-      <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration name="_16_lambdaKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="11-day" />
@@ -238,6 +228,16 @@
       <option name="MAIN_CLASS_NAME" value="_19_DSLKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
+    <configuration name="_20_DSL_HTMLKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="11-day" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="_20_DSL_HTMLKt" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -261,19 +261,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Kotlin._15_高阶函数Kt" />
       <item itemvalue="Kotlin._16_lambdaKt" />
       <item itemvalue="Kotlin._17_四大函数Kt" />
       <item itemvalue="Kotlin._18_回调Kt" />
       <item itemvalue="Kotlin._19_DSLKt" />
+      <item itemvalue="Kotlin._20_DSL_HTMLKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._20_DSL_HTMLKt" />
         <item itemvalue="Kotlin._19_DSLKt" />
         <item itemvalue="Kotlin._18_回调Kt" />
         <item itemvalue="Kotlin._17_四大函数Kt" />
         <item itemvalue="Kotlin._16_lambdaKt" />
-        <item itemvalue="Kotlin._15_高阶函数Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -316,12 +316,12 @@
       <workItem from="1533082075265" duration="762000" />
       <workItem from="1533168486772" duration="1710000" />
       <workItem from="1533254918790" duration="1008000" />
-      <workItem from="1533513547868" duration="603000" />
+      <workItem from="1533513547868" duration="714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38703000" />
+    <option name="totallyTimeSpent" value="38814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -329,7 +329,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.49928468" visible="true" weight="0.3272727" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49928468" weight="0.3272727" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -337,11 +337,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.20242424" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.20242424" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21244635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21244635" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -703,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/20-DSL-HTML.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="405">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
         </state>
       </provider>
     </entry>

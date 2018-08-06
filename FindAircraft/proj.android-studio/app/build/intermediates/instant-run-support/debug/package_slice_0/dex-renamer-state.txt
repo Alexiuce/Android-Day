@@ -1,4 +1,0 @@
-#Sat Feb 03 14:32:22 CST 2018
-base.0=/Users/Alexcai/GitApp/Android-Day/FindAircraft/proj.android-studio/app/build/intermediates/transforms/dexMerger/debug/1
-renamed.0=classes.dex
-file.0=/Users/Alexcai/GitApp/Android-Day/FindAircraft/proj.android-studio/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex

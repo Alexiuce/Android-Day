@@ -37,3 +37,7 @@ open class Tag(var name: String){
 class HTML:Tag("Html"){
 
 }
+
+class Body: Tag("Body"){}
+class Head: Tag("Head"){}
+class Div: Tag("Div"){}

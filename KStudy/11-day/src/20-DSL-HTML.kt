@@ -2,8 +2,17 @@ import java.lang.StringBuilder
 
 fun main(args: Array<String>) {
 
-    val html = Tag("html")
+    val html = Html()
     println(html)
+
+    val body = Body()
+    val head = Head()
+    val div = Div()
+    html.setTag(head)
+    head.setTag(body)
+    body.setTag(div)
+    println(html)
+
 
 }
 
@@ -34,7 +43,7 @@ open class Tag(var name: String){
     }
 }
 
-class HTML:Tag("Html"){
+class Html:Tag("Html"){
 
 }
 

@@ -10,6 +10,10 @@ fun main(args: Array<String>) {
         }
         body {
 
+            div {
+
+            }
+
         }
 
     }
@@ -35,9 +39,15 @@ fun Html.head(bock: ()-> Unit){
 }
 
 /* 定义body func*/
-fun Html.body(block: ()->Unit){
+fun Html.body(block: Body.()->Unit){
     val b = Body()
+    b.block()
     setTag(b)
+}
+/* 定义body中的div */
+fun Body.div(block: () -> Unit){
+    val d = Div()
+    setTag(d)
 }
 
 
@@ -66,6 +76,9 @@ open class Tag(var name: String){
         return sb.toString()
     }
 }
+
+
+
 
 class Html:Tag("Html"){
 

@@ -2,18 +2,33 @@ import java.lang.StringBuilder
 
 fun main(args: Array<String>) {
 
-    val html = Html()
-    println(html)
-
-    val body = Body()
-    val head = Head()
-    val div = Div()
-    html.setTag(head)
-    head.setTag(body)
-    body.setTag(div)
-    println(html)
 
 
+    val result = html {
+        head {
+
+        }
+
+    }
+    println(result)
+}
+
+
+/* HTML dsl 步骤
+* 1. 定义方法
+*
+* */
+
+fun html(block: Html.()->Unit): String{
+    val h5 = Html()
+    h5.block()
+    return h5.toString()
+}
+
+/*2. 定义内部扩展函数 */
+fun Html.head(bock: ()-> Unit){
+    val h = Head()
+    setTag(h)
 }
 
 

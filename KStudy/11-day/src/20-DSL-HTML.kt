@@ -8,6 +8,9 @@ fun main(args: Array<String>) {
         head {
 
         }
+        body {
+
+        }
 
     }
     println(result)
@@ -29,6 +32,12 @@ fun html(block: Html.()->Unit): String{
 fun Html.head(bock: ()-> Unit){
     val h = Head()
     setTag(h)
+}
+
+/* 定义body func*/
+fun Html.body(block: ()->Unit){
+    val b = Body()
+    setTag(b)
 }
 
 

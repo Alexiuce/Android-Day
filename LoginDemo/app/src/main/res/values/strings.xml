@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">LoginDemo</string>
-    <string name="loigin_user">username</string>
-    <string name="login_password">password</string>
-    <string name="login_button_title">login</string>
-    <string name="login_button_forget">forget password</string>
-    <string name="login_buttion_regist">regist</string>
-    <string name="login_text_otherSytle">other login style</string>
-</resources>

@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
     public void showTextView(View v){
         Log.d(TAG, "showTextView: ====");
     }
+
+    public void showButtonView(View view) {
+        Log.d(TAG, "showButtonView: button view");
+    }
 }

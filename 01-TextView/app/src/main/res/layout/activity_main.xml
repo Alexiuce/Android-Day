@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
@@ -14,8 +15,28 @@
         android:textSize="20sp"
         android:textAllCaps="false"
         android:textColor="#000000"
-        android:background="#ff9900"
+        android:background="@drawable/button_circle_shape"
         android:onClick="showTextView"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="Button View"
+        android:textColor="@drawable/text_color_change"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_stroke_shape"
+        android:onClick="showButtonView"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="Selected Button"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@drawable/button_selected_change"
         />
 
 </LinearLayout>

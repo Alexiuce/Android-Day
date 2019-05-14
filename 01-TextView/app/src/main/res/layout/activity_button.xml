@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/button_selected_change"
-        android:textColor="#fff"
+        android:textColor="@drawable/text_color_change"
         android:text="Selected Button"
         android:textAllCaps="false"
         />

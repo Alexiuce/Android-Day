@@ -25,4 +25,15 @@
         android:textAllCaps="false"
         android:layout_marginTop="10dp"/>
 
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast View"
+        android:textSize="25sp"
+        android:background="@color/design_default_color_primary"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"/>
+
 </LinearLayout>

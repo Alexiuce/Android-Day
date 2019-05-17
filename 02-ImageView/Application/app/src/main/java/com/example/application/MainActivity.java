@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.application.recycleview.RecycleViewActivity;
+import com.example.application.recycleview.ToastActivity;
 import com.example.application.recycleview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(it);
+            }
+        });
+
+        findViewById(R.id.btn_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, ToastActivity.class);
                 startActivity(it);
             }
         });

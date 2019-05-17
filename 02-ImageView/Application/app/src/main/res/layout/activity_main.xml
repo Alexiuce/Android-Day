@@ -8,15 +8,21 @@
     android:layout_margin="15dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-       />
+
     <Button
+        android:id="@+id/btn_1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:onClick="showRecycleView"
         android:text="Recycle View"/>
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Web View"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

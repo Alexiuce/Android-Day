@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.application">
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="com.example.dialogapplication">
 
     <application
         android:allowBackup="true"
@@ -11,15 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycleview.AlertDialogActivity"></activity>
-        <activity android:name=".recycleview.ToastActivity" />
-        <activity android:name=".recycleview.WebViewActivity" />
-        <activity android:name=".recycleview.LineRecycleViewActivity" />
-        <activity android:name=".recycleview.RecycleViewActivity" />
+        <activity android:name=".Dialog1Activity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

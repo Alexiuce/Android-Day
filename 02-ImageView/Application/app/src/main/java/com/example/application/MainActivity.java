@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.application.recycleview.AlertDialogActivity;
 import com.example.application.recycleview.RecycleViewActivity;
 import com.example.application.recycleview.ToastActivity;
 import com.example.application.recycleview.WebViewActivity;
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(MainActivity.this, ToastActivity.class);
+                startActivity(it);
+            }
+        });
+        findViewById(R.id.btn_4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, AlertDialogActivity.class);
                 startActivity(it);
             }
         });

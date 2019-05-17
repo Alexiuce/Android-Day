@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.application.recycleview.RecycleViewActivity;
+import com.example.application.recycleview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +14,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setListener();
     }
+
+    private void setListener() {
+        findViewById(R.id.btn_2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(it);
+            }
+        });
+    }
+
     public void showRecycleView(View v){
         Intent it = new Intent(MainActivity.this, RecycleViewActivity.class);
         startActivity(it);

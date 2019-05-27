@@ -10,9 +10,9 @@
     <TextView
         android:id="@+id/tv_top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="Fragment Demo!"
-        android:textAlignment="center"
+        android:gravity="center"
         android:background="@color/colorAccent"
          />
     <LinearLayout
@@ -38,20 +38,28 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        android:text="Home"
+        android:onClick="showHome"
+        android:gravity="center"/>
     <TextView
         android:id="@+id/tv_classify"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="50dp"
-
-        android:background="@color/colorPrimary" />
+        android:text="Classify"
+        android:gravity="center"
+        android:onClick="showClassify"
+        android:background="@color/colorAccent" />
     <TextView
         android:id="@+id/tv_discovery"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        android:text="Discovery"
+        android:onClick="showDiscovery"
+        android:gravity="center"/>
 
     </LinearLayout>
 

@@ -11,6 +11,8 @@
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment"
         android:textColor="@color/colorAccent"
-        android:background="#fff"/>
+        android:background="#fff"
+        android:gravity="center"
+        android:textSize="50sp"/>
 
 </LinearLayout>

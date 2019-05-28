@@ -4,6 +4,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void showDiscovery(View v){
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.home_content,new DiscoveryFragment());
+        ft.replace(R.id.home_content,new LoginFragment());
 
         ft.commit();
     }
@@ -43,5 +44,9 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.home_content,new HomeFragment());
 
         ft.commit();
+    }
+
+    public void clickLogin(View v){
+        Log.d("FL", "clickLogin:123123 ");
     }
 }

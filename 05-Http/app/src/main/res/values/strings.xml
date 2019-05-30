@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HttpApplication</string>
+
+    <!--tab bar string -->
+    <string name="tab_home_title">Home</string>
+    <string name="tab_classify_title">Classify</string>
+    <string name="tab_discovery_title">Discovery</string>
+    <string name="tab_profile_title">Profile</string>
 </resources>

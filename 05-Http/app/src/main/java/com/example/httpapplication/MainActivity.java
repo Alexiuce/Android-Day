@@ -1,5 +1,7 @@
 package com.example.httpapplication;
 
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         setupUI();
         HttpTool.fetchData();
+
+        /** 加载home fragment */
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        HomeFragment homeFragment = new HomeFragment();
+        ft.replace(R.id.placeholder_layout,homeFragment);
+
+        ft.commit();
 
     }
 

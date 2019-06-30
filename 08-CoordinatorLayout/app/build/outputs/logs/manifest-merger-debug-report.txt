@@ -1,0 +1,168 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:design:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/8fe7bd3b050d3a72ac1d0d788e18e426/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/fe49bd2cb576e9c3f97f1f765e64709b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/032f5cdb4c35a8c85575098ffe5ea563/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/40b748f76b9f3177741088ffdbc73bfe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/eec61531dc3f1d93f71f460c3d3312ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/04e7067001b3d611ac036521851fa043/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/399e62a00dac234a391921b6bfd12c63/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/191d285a50f569bfbdd86510303d88cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/7c34a61a1cf9f35c9be3550eb88fb441/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a2ba514a0f2dc7fd2951f04f3063fb0d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/5df477a1376f46f1cd5611157f870741/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/b8b3a3f478843d648e5f4b672dca43fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3d43532ecde2f3b342d929da4b69e9b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/6917e0cd0cdd2fa10f67a6da13a70366/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/9a84c3682272cecf8837475685ed6d2b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/0c942a554c3443f5d9497ef90407b79c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3615a2e34d38e7e967a72ae4f0ec5b71/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/ba52cb513c141d0368f80cd6c01561de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/23b2a421309755b807d72bd60096dbdf/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/991cd3dd273ce78c7775f2c07a22cafa/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/4b68f600486ffd6457507fdd69809379/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a3833b6826d254be4362738fde93614a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/55db67e66f79c1e954b0a2758d0464ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3df759949fc2556f6eaa40e1c4891699/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/f5b43c6df64e29004dabd9616512b578/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/49ba9241d10c4b6beebe313f3ce250ea/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a7ac659439f5afdbb44cfdd1196c5efd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/dc8d5c236bc84dcb71cf27c1966c5136/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/def5f18312428257c075121d8c1fc408/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/880a962ad86b53db45a105c87fa7d3fa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/db7dcbff88a00a060b663f3155760eef/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:3:5-46
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:design:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/8fe7bd3b050d3a72ac1d0d788e18e426/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/8fe7bd3b050d3a72ac1d0d788e18e426/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/032f5cdb4c35a8c85575098ffe5ea563/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/032f5cdb4c35a8c85575098ffe5ea563/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/23b2a421309755b807d72bd60096dbdf/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/23b2a421309755b807d72bd60096dbdf/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/991cd3dd273ce78c7775f2c07a22cafa/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/991cd3dd273ce78c7775f2c07a22cafa/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/23b2a421309755b807d72bd60096dbdf/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.best.coordinatorapplication.MainActivity
+ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/8fe7bd3b050d3a72ac1d0d788e18e426/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/8fe7bd3b050d3a72ac1d0d788e18e426/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/fe49bd2cb576e9c3f97f1f765e64709b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/fe49bd2cb576e9c3f97f1f765e64709b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/032f5cdb4c35a8c85575098ffe5ea563/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/032f5cdb4c35a8c85575098ffe5ea563/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/40b748f76b9f3177741088ffdbc73bfe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/40b748f76b9f3177741088ffdbc73bfe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/eec61531dc3f1d93f71f460c3d3312ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/eec61531dc3f1d93f71f460c3d3312ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/04e7067001b3d611ac036521851fa043/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/04e7067001b3d611ac036521851fa043/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/399e62a00dac234a391921b6bfd12c63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/399e62a00dac234a391921b6bfd12c63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/191d285a50f569bfbdd86510303d88cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/191d285a50f569bfbdd86510303d88cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/7c34a61a1cf9f35c9be3550eb88fb441/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/7c34a61a1cf9f35c9be3550eb88fb441/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a2ba514a0f2dc7fd2951f04f3063fb0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a2ba514a0f2dc7fd2951f04f3063fb0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/5df477a1376f46f1cd5611157f870741/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/5df477a1376f46f1cd5611157f870741/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/b8b3a3f478843d648e5f4b672dca43fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/b8b3a3f478843d648e5f4b672dca43fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3d43532ecde2f3b342d929da4b69e9b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3d43532ecde2f3b342d929da4b69e9b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/6917e0cd0cdd2fa10f67a6da13a70366/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/6917e0cd0cdd2fa10f67a6da13a70366/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/9a84c3682272cecf8837475685ed6d2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/9a84c3682272cecf8837475685ed6d2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/0c942a554c3443f5d9497ef90407b79c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/0c942a554c3443f5d9497ef90407b79c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3615a2e34d38e7e967a72ae4f0ec5b71/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3615a2e34d38e7e967a72ae4f0ec5b71/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/ba52cb513c141d0368f80cd6c01561de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/ba52cb513c141d0368f80cd6c01561de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/23b2a421309755b807d72bd60096dbdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/23b2a421309755b807d72bd60096dbdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/991cd3dd273ce78c7775f2c07a22cafa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/991cd3dd273ce78c7775f2c07a22cafa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/4b68f600486ffd6457507fdd69809379/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/4b68f600486ffd6457507fdd69809379/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a3833b6826d254be4362738fde93614a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a3833b6826d254be4362738fde93614a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/55db67e66f79c1e954b0a2758d0464ef/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/55db67e66f79c1e954b0a2758d0464ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3df759949fc2556f6eaa40e1c4891699/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/3df759949fc2556f6eaa40e1c4891699/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/f5b43c6df64e29004dabd9616512b578/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/f5b43c6df64e29004dabd9616512b578/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/49ba9241d10c4b6beebe313f3ce250ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/49ba9241d10c4b6beebe313f3ce250ea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a7ac659439f5afdbb44cfdd1196c5efd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/a7ac659439f5afdbb44cfdd1196c5efd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/dc8d5c236bc84dcb71cf27c1966c5136/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/dc8d5c236bc84dcb71cf27c1966c5136/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/def5f18312428257c075121d8c1fc408/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/def5f18312428257c075121d8c1fc408/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/880a962ad86b53db45a105c87fa7d3fa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/880a962ad86b53db45a105c87fa7d3fa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/db7dcbff88a00a060b663f3155760eef/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/Alexcai/.gradle/caches/transforms-2/files-2.1/db7dcbff88a00a060b663f3155760eef/AndroidManifest.xml:20:5-44
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Alexcai/GitApp/Android-Day/08-CoordinatorLayout/app/src/main/AndroidManifest.xml
